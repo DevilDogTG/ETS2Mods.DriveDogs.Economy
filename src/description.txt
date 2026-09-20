@@ -1,8 +1,7 @@
 [orange]DriveDogs: Economy
 
 [normal]A combined realism & economy overhaul, assembled section by section from hand-picked mods
-and custom tuning. This description grows one section at a time as each system is added -
-right now there's one section: Damage & Wear.
+and custom tuning. This description grows one section at a time as each system is added.
 --------------------
 [orange]Damage & Wear
 [normal]Crashes hurt more, and part of that damage never fully goes away - the harder you drive,
@@ -25,11 +24,48 @@ What does NOT change:
 - Vanilla's crash-to-cargo damage behavior.
 - How repairs and service work - only how much damage/wear they need to clear.
 --------------------
+[orange]Fines & Police
+[normal]Fines are no longer "magical" - you won't get ticketed out of thin air for things no
+officer or camera could have seen. But when you genuinely get caught, it costs exactly what it
+costs in the base game - full price. Rule-breaking should be a real risk, not free.
+
+What changes:
+- Several violations that vanilla could fine you for with zero police or camera anywhere nearby
+  (wrong way, no headlights at night, skipping a mandatory break, stopping on the hard
+  shoulder, driving a damaged vehicle) now only get ticketed if a real police car is actually
+  there to catch you.
+- Speed cameras, weigh stations, and border checkpoints still catch you reliably - those are
+  real fixed infrastructure, not "magic," so they're left alone (with a very slight realism
+  tweak: cameras occasionally miss, like real ones).
+- Red light running now has a chance of being camera-caught even without police nearby,
+  instead of vanilla's flat rate.
+- When a police car is genuinely nearby, it's now more likely to catch several of the
+  violations above than vanilla was - since we removed the "free pass" of no police around,
+  getting caught by an actual patrol is a bit more reliable to compensate.
+- A couple of "gotcha" instant tickets are softened: speeding and illegal-trailer violations
+  now need a real police car to notice you for a few extra seconds before ticketing, instead of
+  an almost-instant vanilla catch.
+- Repeated fines from the same lingering police car are spaced out more, so one patrol can't
+  spam you with tickets every few seconds.
+
+What does NOT change:
+- Every fine amount - all exactly vanilla. Nothing here is a discount.
+- The speeding fine's scaling with how far over the limit you are - still vanilla's full curve,
+  up to 12.5x the base fine for extreme speeding.
+- How much a nearby police car increases your fine when it does catch you - still full vanilla
+  severity.
+
+Heads up: some of the violations above (mandatory break, damaged vehicle, hard shoulder, wrong
+way, no lights) now only trigger when a real police car is nearby, and ETS2's police aren't
+everywhere. In practice that makes those specific violations noticeably rarer overall, not just
+fairer - that's the intended tradeoff for removing "magical" detection.
+--------------------
 [orange]More sections coming
-[normal]Damage & Wear is the first system in this pack. Fuel, cargo pricing, and other economy
-systems will be documented here as they're added.
+[normal]Damage & Wear and Fines & Police are the first two systems in this pack. Cargo pricing
+and other economy systems will be documented here as they're added.
 --------------------
 [green]Changelogs
 
 [orange]v0.1.0
 [normal]- Initial release: Damage & Wear system
+- Fines & Police system
