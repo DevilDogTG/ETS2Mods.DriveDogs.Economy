@@ -60,12 +60,45 @@ way, no lights) now only trigger when a real police car is nearby, and ETS2's po
 everywhere. In practice that makes those specific violations noticeably rarer overall, not just
 fairer - that's the intended tradeoff for removing "magical" detection.
 --------------------
+[orange]Used Truck Market
+[normal]Second-hand trucks are a real bargain-vs-risk decision now, not a showroom-fresh clone of
+a new truck with fewer zeros on the price tag.
+
+What changes:
+- Every used truck now needs a first service - it comes with real repairable wear (a garage
+  bill), instead of vanilla's used trucks being mechanically as good as new.
+- Mileage can run much higher than vanilla - up to 1,200,000 km on the highest-mileage listings,
+  instead of vanilla's 100,000 km ceiling. There are no near-new low-mileage listings anymore
+  (vanilla's occasional very-low-mileage find is gone).
+- High-mileage trucks can carry real, lasting damage that no repair fully clears - so a cheap
+  bargain can mean a genuinely compromised truck, not just a dusty one.
+- Prices react much more strongly to a truck's condition - both the repairable wear and the
+  permanent damage now swing the price a lot more than in vanilla.
+- The market is bigger (18-36 trucks at once) and refreshes about twice a day, so there's
+  usually something new to look at between jobs without being able to buy up the whole lot in
+  one sitting.
+- Individual listings vary more in price than vanilla, so two similar-looking trucks won't
+  always cost the same.
+
+Career progression: new players start with access to a smaller, safer slice of the used market -
+lower mileage ceiling, less severe permanent damage possible, and a narrower selection of truck
+models. This opens up as you level up, reaching full access to every truck model, the full
+1,200,000 km ceiling, and the roughest bargain-basement listings by level 30. Level 15 is a
+clear milestone along the way, well ahead of full unlock - a meaningful upgrade mid-career, not
+just a token bump.
+
+What does NOT change:
+- How a used truck performs or continues to wear once you own it - that's the Damage & Wear
+  system above, applied exactly the same as any other truck from the moment of purchase.
+--------------------
 [orange]More sections coming
-[normal]Damage & Wear and Fines & Police are the first two systems in this pack. Cargo pricing
-and other economy systems will be documented here as they're added.
+[normal]Damage & Wear, Fines & Police, and the Used Truck Market are the first systems in this
+pack. New-truck dealer pricing, cargo pricing, and other economy systems will be documented here
+as they're added.
 --------------------
 [green]Changelogs
 
 [orange]v0.1.0
 [normal]- Initial release: Damage & Wear system
 - Fines & Police system
+- Used Truck Market system

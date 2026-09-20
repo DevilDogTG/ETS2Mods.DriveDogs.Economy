@@ -1,0 +1,113 @@
+SiiNunit
+{
+used_vehicle_assortment_config : .config
+{
+	# DDE: faster refresh than vanilla but keeps vanilla's ~1:1.5 generation:expiration ratio,
+	# so checking between jobs finds fresh stock without making bulk-buying trivial
+	truck_generation_game_time_min: 720	# 0.5 days (vanilla 1440)
+	truck_generation_game_time_max: 1440	# 1 day (vanilla 2160)
+
+	truck_expiration_game_time_min: 1440	# 1 day (vanilla 2880)
+	truck_expiration_game_time_max: 2160	# 1.5 days (vanilla 4320)
+
+	# DDE: bigger market than vanilla for real variety to shop from
+	truck_count_min: 18	# vanilla 12
+	truck_count_max: 36	# vanilla 18
+
+	# DDE: catalog access now scales with career level - see dealer_truck_offer_levels/ratios below
+	dealer_truck_offer_ratios[]: 0.40
+	dealer_truck_offer_ratios[]: 0.55
+	dealer_truck_offer_ratios[]: 0.70
+	dealer_truck_offer_ratios[]: 0.80
+	dealer_truck_offer_ratios[]: 0.90
+	dealer_truck_offer_ratios[]: 1.00
+	dealer_truck_offer_levels[]: 0
+	dealer_truck_offer_levels[]: 5
+	dealer_truck_offer_levels[]: 10
+	dealer_truck_offer_levels[]: 15	# mid-game milestone
+	dealer_truck_offer_levels[]: 20
+	dealer_truck_offer_levels[]: 30	# end-game entry - full catalog access from here on
+
+	# DDE: mileage ceiling now scales with career level - see truck_odometer_limit_levels/values
+	# below. dealer_truck_odometer_max is the absolute ceiling every level curve tops out at.
+	truck_odometer_limit_values[]: 150000
+	truck_odometer_limit_values[]: 350000
+	truck_odometer_limit_values[]: 550000
+	truck_odometer_limit_values[]: 750000
+	truck_odometer_limit_values[]: 950000
+	truck_odometer_limit_values[]: 1200000
+	truck_odometer_limit_levels[]: 0
+	truck_odometer_limit_levels[]: 5
+	truck_odometer_limit_levels[]: 10
+	truck_odometer_limit_levels[]: 15	# mid-game milestone
+	truck_odometer_limit_levels[]: 20
+	truck_odometer_limit_levels[]: 30	# end-game entry - full mileage ceiling from here on
+
+	truck_odometer_range_coef: 0.9
+
+	# DDE: no near-new bargains (vanilla allowed a 1,000 km floor); big high end for exceptional
+	# high-mileage trucks, gated for new players by the level curve above
+	dealer_truck_odometer_min: 50000	# vanilla 1000
+	dealer_truck_odometer_max: 1200000	# vanilla 100000
+
+	# DDE: fixable (repairable) wear - vanilla used trucks had none at all. Every used truck now
+	# comes with a real first-service bill; wheels wear fastest, matching real tire turnover.
+	truck_chassis_wear_min: 0.05
+	truck_chassis_wear_max: 0.35
+
+	truck_wheels_wear_min: 0.08
+	truck_wheels_wear_max: 0.40
+
+	truck_engine_wear_min: 0.05
+	truck_engine_wear_max: 0.35
+
+	truck_transmission_wear_min: 0.05
+	truck_transmission_wear_max: 0.35
+
+	truck_cabin_wear_min: 0.03
+	truck_cabin_wear_max: 0.28
+
+	# DDE: permanent wear ceiling now scales with career level - see
+	# truck_wear_unfixable_limit_levels/values below.
+	truck_wear_unfixable_limit_values[]: 0.10
+	truck_wear_unfixable_limit_values[]: 0.14
+	truck_wear_unfixable_limit_values[]: 0.17
+	truck_wear_unfixable_limit_values[]: 0.20
+	truck_wear_unfixable_limit_values[]: 0.23
+	truck_wear_unfixable_limit_values[]: 0.25
+	truck_wear_unfixable_limit_levels[]: 0
+	truck_wear_unfixable_limit_levels[]: 5
+	truck_wear_unfixable_limit_levels[]: 10
+	truck_wear_unfixable_limit_levels[]: 15	# mid-game milestone
+	truck_wear_unfixable_limit_levels[]: 20
+	truck_wear_unfixable_limit_levels[]: 30	# end-game entry - full ceiling from here on
+
+	# DDE: permanent wear can now genuinely run high (vanilla capped at 0.4, but was rarely
+	# reached) - a high-mileage bargain can carry real, lasting damage. Engine (most critical
+	# mechanically) is the only part allowed to reach the absolute 0.25 limit above.
+	truck_chassis_wear_unfixable_min: 0.0
+	truck_chassis_wear_unfixable_max: 0.22
+
+	truck_wheels_wear_unfixable_min: 0.0
+	truck_wheels_wear_unfixable_max: 0.20
+
+	truck_engine_wear_unfixable_min: 0.0
+	truck_engine_wear_unfixable_max: 0.25
+
+	truck_transmission_wear_unfixable_min: 0.0
+	truck_transmission_wear_unfixable_max: 0.22
+
+	truck_cabin_wear_unfixable_min: 0.0
+	truck_cabin_wear_unfixable_max: 0.18
+
+	# DDE: all three price factors raised from vanilla so wear (fixable and permanent alike)
+	# has a real, visible effect on what a used truck actually costs.
+	truck_price_factor_integrity_wear: 3.5	# vanilla 3.0
+	truck_price_factor_wear_unfixable: 2.75	# vanilla 2.0
+	truck_price_factor_wear: 2.0	# vanilla 1.0 - vanilla trucks had no fixable wear to price in at all
+
+	truck_price_minimum_accessory_price_coef: 0.06	# vanilla 0.1
+
+	truck_price_range_coef: 0.35	# vanilla 0.2 - more listing-to-listing variance
+}
+}
