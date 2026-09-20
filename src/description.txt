@@ -1,0 +1,35 @@
+[orange]DriveDogs: Economy
+
+[normal]A combined realism & economy overhaul, assembled section by section from hand-picked mods
+and custom tuning. This description grows one section at a time as each system is added -
+right now there's one section: Damage & Wear.
+--------------------
+[orange]Damage & Wear
+[normal]Crashes hurt more, and part of that damage never fully goes away - the harder you drive,
+the more it costs you over the truck's whole life. Routine wear from just driving stays gentle,
+so careful drivers aren't punished for racking up the miles.
+
+What changes:
+- Collisions deal 2x damage to your truck and trailer, and more of that damage transfers
+  between the two - hitting something is a bigger deal than in vanilla.
+- Engine and transmission take a larger share of crash damage.
+- Part of crash damage is now permanent and can't be cleared by any repair - reckless driving
+  leaves a lasting mark on the truck (vanilla already worked this way; this pack raises it).
+- The cabin and chassis now pick up a small amount of wear just from driving distance -
+  long-haul trucks will need occasional service even without a single crash.
+- Engine and transmission wear slower per km than vanilla, so that part of routine servicing
+  is a bit less frequent.
+- Wheel wear is unchanged from vanilla.
+
+What does NOT change:
+- Vanilla's crash-to-cargo damage behavior.
+- How repairs and service work - only how much damage/wear they need to clear.
+--------------------
+[orange]More sections coming
+[normal]Damage & Wear is the first system in this pack. Fuel, cargo pricing, and other economy
+systems will be documented here as they're added.
+--------------------
+[green]Changelogs
+
+[orange]v0.1.0
+[normal]- Initial release: Damage & Wear system
