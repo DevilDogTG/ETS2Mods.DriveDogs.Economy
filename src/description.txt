@@ -91,10 +91,42 @@ What does NOT change:
 - How a used truck performs or continues to wear once you own it - that's the Damage & Wear
   system above, applied exactly the same as any other truck from the moment of purchase.
 --------------------
+[orange]Operating Consequences
+[normal]Running a haulage business should feel like one - mistakes and emergencies cost real
+money, without turning every ordinary job into a grind. Job pay itself is untouched; only what
+happens when something goes wrong changes.
+
+What changes:
+- Abandoning a job, damaging cargo, and reselling a truck all cost noticeably more than vanilla -
+  2x the abandoned-job fine, 2x the cargo-damage penalty (both the flat fee and the percentage of
+  the job's pay it eats), and a real cut to what you get back selling a truck (40% instead of
+  vanilla's 60%).
+- Damaging cargo now costs experience points more too, matching the money penalty - a bad
+  delivery sets back your wallet and your career progress by the same degree.
+- Getting stuck: emergency towing, emergency refueling, and emergency EV charging all cost
+  significantly more than vanilla. These only ever happen by choice (running dry, ending up
+  somewhere a tow is needed) - avoid them entirely with normal careful driving, or pay a real
+  price when you don't.
+- Keeping fuel topped up at your own garage is less of a blanket discount than vanilla (5%
+  instead of 15%) - still worth doing, just not free money.
+- Delivery deadlines are now built around a more realistic average pace (accounting for loading,
+  traffic, and rest stops) instead of near-highway-cruising speed - so there's less pressure to
+  speed just to make the clock. The easy/medium/hard difficulty thresholds that decide a job's
+  pay bonus are recalibrated to match, so the mix of job difficulty you see stays close to
+  vanilla's rather than quietly getting easier.
+
+What does NOT change:
+- Every job's base pay, per-km revenue rate, and difficulty-tier bonus multiplier - all exactly
+  vanilla. This section is entirely about the cost side, not what you earn.
+- Driver hiring, wages, and AI driver economics - unchanged, a separate topic from your own
+  operating costs.
+- Bank loans - amounts and interest rates are exactly vanilla, so capital to expand is just as
+  available as always even though day-to-day mistakes cost more.
+--------------------
 [orange]More sections coming
-[normal]Damage & Wear, Fines & Police, and the Used Truck Market are the first systems in this
-pack. New-truck dealer pricing, cargo pricing, and other economy systems will be documented here
-as they're added.
+[normal]Damage & Wear, Fines & Police, the Used Truck Market, and Operating Consequences are the
+first systems in this pack. New-truck dealer pricing, cargo pricing, and other economy systems
+will be documented here as they're added.
 --------------------
 [green]Changelogs
 
@@ -102,3 +134,4 @@ as they're added.
 [normal]- Initial release: Damage & Wear system
 - Fines & Police system
 - Used Truck Market system
+- Operating Consequences system
