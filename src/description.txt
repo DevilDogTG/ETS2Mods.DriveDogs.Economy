@@ -155,7 +155,7 @@ be documented here as they're added.
 --------------------
 [green]Changelogs
 
-[orange]v0.1.0
+[orange]v1.0.0
 [normal]- Initial release: Damage & Wear system
 - Fines & Police system
 - Used Truck Market system
