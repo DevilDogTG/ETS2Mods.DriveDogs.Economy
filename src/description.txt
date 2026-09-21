@@ -116,17 +116,42 @@ What changes:
   vanilla's rather than quietly getting easier.
 
 What does NOT change:
-- Every job's base pay, per-km revenue rate, and difficulty-tier bonus multiplier - all exactly
-  vanilla. This section is entirely about the cost side, not what you earn.
+- Job base pay and difficulty-tier bonus multipliers - all exactly vanilla. This section is
+  entirely about the cost side, not what you earn (job pay itself is addressed in Job Types &
+  Skills below).
 - Driver hiring, wages, and AI driver economics - unchanged, a separate topic from your own
   operating costs.
 - Bank loans - amounts and interest rates are exactly vanilla, so capital to expand is just as
   available as always even though day-to-day mistakes cost more.
 --------------------
+[orange]Job Types & Skills
+[normal]The first piece of a bigger "meaningful jobs and cargo" pass - matching pay to who's
+actually carrying the risk, and finally rewarding a skill vanilla forgot to reward.
+
+What changes:
+- Cargo Market jobs (where you own the trailer as well as the truck) now pay noticeably more per
+  km than Freight Market jobs - 1.4x the base rate instead of vanilla's barely-there 1.0x, a real
+  premium for carrying full responsibility, including the trailer's own damage and insurance risk
+  through the Damage & Wear and Operating Consequences systems above.
+- The ADR (hazardous materials) skill now grants a revenue bonus as you rank it up, exactly like
+  the Valuable Cargo, Fragile Cargo, and Urgent Delivery skills already did (+5% per rank, up to
+  +30% at max rank). Vanilla never actually gave this skill a pay bonus at all - specializing in
+  hazmat leveled up your experience but never your paycheck. This pack fixes that gap rather than
+  hand-tuning hazardous cargo's base pay directly, so it stays consistent with how every other
+  cargo specialty already works.
+
+What does NOT change:
+- Quick Jobs and Freight Market pay rates - unchanged, this round only touches Cargo Market.
+- Every other skill (Long Distance, Valuable Cargo, Fragile Cargo, Urgent Delivery, Eco-driving) -
+  all exactly vanilla.
+
+More to come: cargo variety (value, urgency, mass, and hazard class pay differentiation across
+individual cargo types) is a bigger, separate pass and will land in its own update.
+--------------------
 [orange]More sections coming
-[normal]Damage & Wear, Fines & Police, the Used Truck Market, and Operating Consequences are the
-first systems in this pack. New-truck dealer pricing, cargo pricing, and other economy systems
-will be documented here as they're added.
+[normal]Damage & Wear, Fines & Police, the Used Truck Market, Operating Consequences, and Job
+Types & Skills are the first systems in this pack. Cargo variety and other economy systems will
+be documented here as they're added.
 --------------------
 [green]Changelogs
 
@@ -135,3 +160,4 @@ will be documented here as they're added.
 - Fines & Police system
 - Used Truck Market system
 - Operating Consequences system
+- Job Types & Skills system

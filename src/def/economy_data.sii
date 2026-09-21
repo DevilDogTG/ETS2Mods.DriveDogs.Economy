@@ -106,7 +106,10 @@ economy_data : economy.data.storage
 
 	fixed_revenue: 600	# in Euro
 	revenue_coef_per_km: 0.9 # Revenue coefficient per km used during freight market jobs.
-	cargo_market_revenue_coef_per_km: 1.0 # Revenue coefficient per km used during cargo market jobs.
+	# DDE: vanilla 1.0 - Cargo Market means owning the trailer too (damage/insurance risk is
+	# yours), so it should pay a real premium over Freight Market instead of vanilla's marginal
+	# 11% edge (1.0 vs 0.9)
+	cargo_market_revenue_coef_per_km: 1.4 # Revenue coefficient per km used during cargo market jobs.
 
 	reward_bonus_level: 0.015
 
