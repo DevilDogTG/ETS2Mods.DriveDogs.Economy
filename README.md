@@ -1,21 +1,108 @@
-# TODO: Mod Name
+# DriveDogs: Economy
 
-TODO: one or two sentence description of what this mod does.
+An Euro Truck Simulator 2 economy/realism overhaul, built one system at a time. Every change is
+reviewed field-by-field against vanilla (and, where one exists, a reference mod) before being
+written — this isn't a bundle of other people's mods, it's a set of deliberate design decisions,
+each one documented.
 
-## Structure
-- `src/` — mod source (`manifest.sii`, `description.txt`, and mod content)
+**Status: v1.0.0** (first testable release). Targets ETS2 **1.61.1.0**, no DLC required — every
+change is to base-game `def/` files.
+
+## What this mod does
+
+| System | Source file(s) | Summary |
+|---|---|---|
+| Damage & Wear | `src/def/damage_data.sii` | Crashes deal 2x damage and leave a larger permanent mark (1.5x unfixable-damage ratios); routine engine/transmission wear is gentler; cabin/chassis pick up light mileage-based wear for maintenance flavor. |
+| Fines & Police | `src/def/police_data.sii` | Removes "magical" fines (several violations now require a real nearby police car to trigger) while keeping every fine amount and the speeding-multiplier curve at full vanilla severity. |
+| Used Truck Market | `src/def/used_vehicle_config.sii` | Used trucks carry real repairable wear and, at higher mileage, genuine permanent damage. Mileage range extended to 1.2M km with no low-mileage floor. Career-level progression gates market access (full unlock at level 30, a mid-career bump at 15). |
+| Operating Consequences | `src/def/economy_data.sii` | Cargo damage, abandoned jobs, towing, emergency refuel/recharge, and truck resale all cost more. Delivery deadlines are rebuilt around a realistic 45 km/h average pace instead of vanilla's 62 km/h, with `delivery_window[]` rescaled to hold the job-difficulty mix roughly where vanilla had it. Job pay itself, driver economics, and bank loans are untouched. |
+| Job Types & Skills | `src/def/economy_data.sii`, `src/def/skill_data.sii` | Cargo Market pay raised to 1.4x (owning the trailer means owning its risk too). Added the ADR skill's revenue bonus, which vanilla never wired up despite every other cargo-type skill having one. |
+
+Full player-facing detail is in `src/description.txt` (the in-game mod description, one section
+per system, written for non-modders).
+
+## Design conventions
+
+- **Every field that diverges from vanilla is marked with a `# DDE:` comment** stating the
+  vanilla value and, where non-obvious, why it changed. Grep for `DDE:` in any `src/def/*.sii`
+  file to see exactly what this mod touches versus what it left alone.
+- **A file at the same virtual path fully replaces vanilla's** — ETS2's mod system does
+  whole-file replacement, not per-field merging. Every `.sii` file here is authored as a complete
+  copy of the vanilla file with only the intended fields changed, never a partial fragment.
+- **Nothing is adopted from a reference mod wholesale.** Each system was compared against vanilla
+  and (where one existed) a relevant mod as a 3-way table; final values are a deliberate choice,
+  not a copy-paste. See the "Design References" section below for what was reviewed per system.
+- **Income and cost are treated as separate levers.** Systems that raise costs (Operating
+  Consequences) deliberately leave job pay, driver economics, and loans untouched unless a
+  system is explicitly about pay (Job Types & Skills). Check a system's "What does NOT change"
+  section in `src/description.txt` before assuming a field is in scope.
+
+## Compatibility notes for contributors
+
+- Because file replacement is whole-file, **any future system that touches per-truck or
+  per-cargo files** (e.g. the in-progress Cargo Variety pass, or the new-truck dealer pricing
+  work — see Roadmap) needs to check for overlap with other installed mods before writing a
+  file, not just with vanilla. A file this mod ships at the same path as another mod's file will
+  silently win or lose the *entire* file's contents based on Mod Manager load order — there is no
+  partial merge. Concretely: don't add a `def/vehicle/truck/<model>/head_light/*.sii` file
+  without checking whether a lighting mod (e.g. Better Flares) already defines it, and if so,
+  hand-merge the two rather than picking one wholesale.
+- `scs_extractor` has failed with "root directory not found" on at least two known HashFS v1
+  archives (`locale.scs`, and a third-party seat/physics mod) despite correct magic bytes. If you
+  hit this extracting a reference file, it's a likely tool limitation, not a corrupt archive —
+  try an alternate extractor before concluding the file is bad.
+- Some field semantics were inferred from naming/context rather than documented engine behavior
+  (e.g. `used_vehicle_config.sii`'s `dealer_truck_offer_ratio`, `economy_data.sii`'s
+  `delivery_window[]` threshold units). These are flagged inline with `# DDE:` comments where
+  relevant; treat them as well-reasoned estimates worth a playtest confirmation, not guarantees.
+
+## Design References
+
+Mods reviewed for design comparison (not redistributed, not copied wholesale):
+- **Real Damage** (NoobSSD, Workshop) — Damage & Wear
+- **Realistic Police Fines** (satan666, Workshop) — Fines & Police
+- **Realistic Used Truck Prices** (Comwil) and **Roadbound Hard Used Trucks** (snazzyatoms,
+  Workshop) — Used Truck Market
+- **Roadbound Economy - True Economy** (snazzyatoms, Workshop) — Operating Consequences
+  (cost-side only; its income-coefficient cuts were explicitly not adopted)
+- **Realistic Fuel Economy** (Comwil) — reviewed, not included (kept pure vanilla fuel mechanism)
+- **Realistic Truck Dealer Prices** (Comwil) — reviewed, scope moved to a separate repo (see
+  Roadmap)
+
+## Roadmap
+
+- **Cargo Variety** (active) — value/urgency/mass/hazard-class pay differentiation across
+  vanilla's 321 `def/cargo/*.sui` files. No reference mod exists for this one; it's being
+  designed from vanilla data and first principles. Vanilla currently pays hazardous cargo ~3.4x
+  *less* than non-hazardous on average, which this pass aims to correct.
+- **New Truck Dealer Pricing** — split into its own repository,
+  `DevilDogTG/ETS2Mods.DriveDogs.EconomyTruckPriceWithBetterFlares`, due to scope (~5,769 files)
+  and file-level overlap with a separate headlight mod that needed its own dedicated review.
+
+## Repository structure
+
+- `src/` — mod source root
+  - `manifest.sii` — mod metadata (version, display name, category)
+  - `description.txt` — in-game mod description, one section per system
+  - `def/` — the actual game-data overrides (see table above)
 - `output/local/` — packed `.scs` for local installation (gitignored)
 - `output/workshop/` — staged folder for the SCS Workshop Uploader tool (gitignored)
-- `pack.config.json` — optional `packageName` override; version always comes from `src/manifest.sii`
-- `logo.png` — branding asset, input to a cover-image generation step
+- `pack.config.json` — `packageName` used for the packed `.scs` filename; version always comes
+  from `src/manifest.sii`
+- `logo.png` — branding asset
 
 ## Building
-Follows the `ets2-mod-developer` profile convention — use the `pack-mod` skill against this repo:
-- **Local**: produces a versioned `.scs` in `output/local/`.
-- **Workshop**: stages a folder in `output/workshop/` for the SCS Workshop Uploader tool.
 
-## Requirements
-TODO: list any required base mods/DLC and load order.
+Requires `scs_packer` (and `scs_extractor`, for verification) on `PATH`.
+
+- **Local**: `scripts/pack-mod-local.ps1 -RepoRoot <path to this repo>` — produces a versioned
+  `.scs` in `output/local/`, named from `pack.config.json`'s `packageName` and
+  `manifest.sii`'s `package_version`.
+- **Workshop**: stages a folder in `output/workshop/` for the SCS Workshop Uploader tool.
+- To verify a build matches source exactly: extract the packed `.scs` with `scs_extractor` and
+  diff the result against `src/` — should be byte-for-byte identical.
 
 ## Changelog
-See `src/description.txt`.
+
+See `src/description.txt`'s Changelogs section (player-facing) or `git log` (full technical
+detail per change).
