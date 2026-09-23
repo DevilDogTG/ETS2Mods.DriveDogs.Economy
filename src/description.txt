@@ -148,10 +148,35 @@ What does NOT change:
 More to come: cargo variety (value, urgency, mass, and hazard class pay differentiation across
 individual cargo types) is a bigger, separate pass and will land in its own update.
 --------------------
+[orange]Cargo Variety
+[normal]A handful of cargo types vanilla priced flatly or backwards now pay closer to what they
+actually demand from the driver. Everything else - the other ~250 cargo types, already
+correctly priced by weight - is untouched.
+
+What changes:
+- Hazardous cargo (anything requiring an ADR placard) now pays according to how dangerous it
+  actually is, instead of vanilla's near-random pricing that sometimes paid hazmat less than
+  ordinary freight. Explosives and toxic/infectious cargo pay the most; corrosives and gases in
+  the middle; flammable liquids and solids the least of the hazmat tiers, but still a real step
+  up from vanilla.
+- Hauling vehicles as cargo (cars, vans, pickups, caravans, horse trailers, and trucks-as-cargo)
+  now pays a real premium instead of vanilla's flat, near-identical low rate for all of them -
+  this is specialized, higher-value freight and is priced like it.
+- Livestock transport (cattle, pigs) pays somewhat more, reflecting the welfare and
+  time-sensitivity real livestock haulage requires.
+- Electronics, caviar, and truck batteries now count toward the Valuable Cargo skill's XP and
+  revenue bonus, joining the vehicles and heavy machinery that already did in vanilla.
+
+What does NOT change:
+- Every other cargo type's pay rate - vanilla already scales these correctly by weight, so
+  they're left exactly alone rather than getting an arbitrary bump.
+- The Valuable Cargo skill itself (its bonus curve, max rank) - vanilla's existing skill is
+  reused as-is, not modified.
+--------------------
 [orange]More sections coming
-[normal]Damage & Wear, Fines & Police, the Used Truck Market, Operating Consequences, and Job
-Types & Skills are the first systems in this pack. Cargo variety and other economy systems will
-be documented here as they're added.
+[normal]Damage & Wear, Fines & Police, the Used Truck Market, Operating Consequences, Job Types &
+Skills, and Cargo Variety are the systems in this pack so far. More economy systems will be
+documented here as they're added.
 --------------------
 [green]Changelogs
 

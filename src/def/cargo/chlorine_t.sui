@@ -1,0 +1,12 @@
+cargo_data: cargo.chlorine_t
+{
+	name: "@@cn_chlorine@@"
+	adr_class: 2
+	group[]: liquid
+	volume: 1
+	mass: 1562
+	# DDE: vanilla 2.112 - ADR class 2 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 3.3
+	unit_load_time: 90
+	body_types[]: gastank
+}

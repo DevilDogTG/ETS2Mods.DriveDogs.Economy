@@ -1,0 +1,13 @@
+cargo_data: cargo.caravans
+{
+	name: "@@cn_caravans@@"
+	fragility: 0.95
+	valuable: true
+	group[]: machinery
+	volume: 1
+	mass: 63
+	# DDE: vanilla 0.2115 - vehicle-as-cargo carrier premium (specialized/higher-value freight)
+	unit_reward_per_km: 0.783
+	unit_load_time: 30
+	body_types[]: _trucanscans
+}

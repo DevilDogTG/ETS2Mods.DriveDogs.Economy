@@ -1,0 +1,14 @@
+cargo_data: cargo.potassium
+{
+	name: "@@cn_potassium@@"
+	adr_class: 4
+	group[]: liquid
+	group[]: gooseneck
+	volume: 1
+	mass: 250
+	# DDE: vanilla 0.281 - ADR class 4 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 1.214
+	unit_load_time: 15
+	body_types[]: container
+	body_types[]: flatbed_cont
+}

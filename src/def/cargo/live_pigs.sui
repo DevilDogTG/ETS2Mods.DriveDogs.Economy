@@ -1,0 +1,12 @@
+cargo_data: cargo.live_pigs
+{
+	name: "@@cn_live_pigs@@"
+	maximum_distance: 600
+	group[]: livestock
+	volume: 1.73
+	mass: 200
+	# DDE: vanilla 0.32 - livestock transport premium (welfare/time-sensitivity)
+	unit_reward_per_km: 0.602
+	unit_load_time: 60
+	body_types[]: livestock
+}
