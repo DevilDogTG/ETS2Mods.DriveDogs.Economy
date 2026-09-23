@@ -90,6 +90,11 @@ just a token bump.
 What does NOT change:
 - How a used truck performs or continues to wear once you own it - that's the Damage & Wear
   system above, applied exactly the same as any other truck from the moment of purchase.
+
+Note: dealer listings are generated stock, not computed live. If a save already had used-truck
+listings before installing or updating this mod, those particular listings stick around until
+they naturally expire (roughly half a day to a day and a half of in-game time) - only freshly
+generated stock reflects the new count, mileage, and pricing rules.
 --------------------
 [orange]Operating Consequences
 [normal]Running a haulage business should feel like one - mistakes and emergencies cost real
