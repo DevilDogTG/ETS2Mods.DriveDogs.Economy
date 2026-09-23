@@ -9,8 +9,9 @@ BetterFlares headlight mods, this one drops the oncoming-beam layer (not a
 headlight mod) but keeps the road graphic and gold/amber palette matching
 logo.png's own tones.
 """
+import random
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 LOGO_PATH = ROOT / "logo.png"
@@ -27,6 +28,11 @@ BG_TOP = (10, 12, 16)
 BG_BOTTOM = (24, 20, 14)
 TITLE_COLOR = (255, 255, 255)
 SUBTITLE_COLOR = (255, 196, 84)
+SKYLINE_COLOR = (5, 5, 9)
+SKYLINE_RIM_COLOR = (255, 170, 70)
+WINDOW_COLOR = (255, 196, 84)
+COIN_COLOR = (255, 196, 84)
+COIN_RIM_COLOR = (168, 122, 40)
 
 
 def make_background(size):
@@ -40,6 +46,68 @@ def make_background(size):
         b = int(BG_TOP[2] + (BG_BOTTOM[2] - BG_TOP[2]) * t)
         for x in range(w):
             px[x, y] = (r, g, b)
+    return img
+
+
+def add_skyline(img):
+    """City silhouette confined to the thin gap between the text block and
+    the road (roughly 0.685h-0.72h) so it never fights the title/subtitle,
+    and is hidden behind the logo where the two would otherwise overlap,
+    since this runs before paste_logo."""
+    w, h = img.size
+    draw = ImageDraw.Draw(img, "RGBA")
+    rng = random.Random(7)  # fixed seed - stable output across regenerations
+
+    baseline = int(h * 0.722)  # sits right at the road's top edge
+    x = 0.0
+    while x < w:
+        bw = rng.uniform(w * 0.028, w * 0.06)
+        top_frac = rng.uniform(0.685, 0.705)
+        # one taller tower breaking the skyline for visual interest
+        if 0.80 * w < x < 0.90 * w:
+            top_frac = 0.635
+        top = int(h * top_frac)
+        draw.rectangle([x, top, x + bw, baseline], fill=(*SKYLINE_COLOR, 255))
+        draw.line([(x, top), (x + bw, top)], fill=(*SKYLINE_RIM_COLOR, 90), width=max(1, int(h * 0.004)))
+
+        # sparse lit windows
+        rows = max(1, int((baseline - top) / (h * 0.02)))
+        cols = max(1, int(bw / (w * 0.011)))
+        for r in range(rows):
+            for c in range(cols):
+                if rng.random() < 0.3:
+                    wx = x + (c + 0.5) * (bw / cols)
+                    wy = top + (r + 0.7) * ((baseline - top) / rows)
+                    draw.rectangle(
+                        [wx - w * 0.0025, wy - h * 0.004, wx + w * 0.0025, wy + h * 0.004],
+                        fill=(*WINDOW_COLOR, 200),
+                    )
+        x += bw + rng.uniform(w * 0.004, w * 0.012)
+    return img
+
+
+def add_money_motif(img):
+    """Subtle glowing coin stacks tucked into the bottom corners, clear of
+    the road, logo, and text - a quiet nod to the mod's economy theme."""
+    w, h = img.size
+
+    def coin_stack(cx, cy, r, count):
+        layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        draw = ImageDraw.Draw(layer)
+        for i in range(count):
+            y = cy - i * r * 0.38
+            draw.ellipse([cx - r, y - r * 0.34, cx + r, y + r * 0.34], fill=(*COIN_COLOR, 210))
+            draw.ellipse(
+                [cx - r, y - r * 0.34, cx + r, y + r * 0.34], outline=(*COIN_RIM_COLOR, 230), width=max(1, int(r * 0.08))
+            )
+        glow = layer.filter(ImageFilter.GaussianBlur(radius=r * 0.5))
+        base = img.convert("RGBA")
+        base = Image.alpha_composite(base, glow)
+        base = Image.alpha_composite(base, layer)
+        return base.convert("RGB")
+
+    img = coin_stack(cx=w * 0.10, cy=h * 0.90, r=w * 0.024, count=4)
+    img = coin_stack(cx=w * 0.925, cy=h * 0.91, r=w * 0.020, count=3)
     return img
 
 
@@ -82,7 +150,6 @@ def paste_logo(img):
     shadow_logo = Image.new("RGBA", logo.size, (0, 0, 0, 160))
     shadow_logo.putalpha(logo.split()[3])
     shadow.paste(shadow_logo, (pos[0] + 6, pos[1] + 6), shadow_logo)
-    from PIL import ImageFilter
     shadow = shadow.filter(ImageFilter.GaussianBlur(radius=8))
 
     base = img.convert("RGBA")
@@ -148,7 +215,9 @@ def add_text(img):
 
 def main():
     img = make_background(CANVAS_SIZE)
+    img = add_skyline(img)
     img = add_road(img)
+    img = add_money_motif(img)
     img = paste_logo(img)
     img = add_text(img)
     img = img.resize(FINAL_SIZE, Image.LANCZOS)
