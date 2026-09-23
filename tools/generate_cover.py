@@ -147,8 +147,8 @@ def paste_logo(img):
     pos = (pad, pad)
 
     shadow = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    shadow_logo = Image.new("RGBA", logo.size, (0, 0, 0, 160))
-    shadow_logo.putalpha(logo.split()[3])
+    shadow_logo = Image.new("RGBA", logo.size, (0, 0, 0, 255))
+    shadow_logo.putalpha(logo.split()[3].point(lambda a: a * 160 // 255))
     shadow.paste(shadow_logo, (pos[0] + 6, pos[1] + 6), shadow_logo)
     shadow = shadow.filter(ImageFilter.GaussianBlur(radius=8))
 
@@ -189,11 +189,9 @@ def add_text(img):
     subtitle = "Economy & Realism Overhaul"
 
     title_size = int(h * 0.135)
-    title_font = None
     for line in title_lines:
         f = fit_font(draw, line, FONT_BOLD, max_width, title_size)
         title_size = min(title_size, f.size)
-        title_font = f
     title_font = ImageFont.truetype(FONT_BOLD, title_size)
 
     subtitle_font = fit_font(draw, subtitle, FONT_REG, max_width, int(h * 0.06))
