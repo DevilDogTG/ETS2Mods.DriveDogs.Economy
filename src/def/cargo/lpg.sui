@@ -1,0 +1,14 @@
+cargo_data: cargo.lpg
+{
+	name: "@@cn_lpg@@"
+	fragility: 0.5
+	adr_class: 2
+	group[]: liquid
+	volume: 1
+	mass: 265
+	# DDE: vanilla 0.35 - ADR class 2 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 1.149
+	unit_load_time: 40
+	body_types[]: container
+	body_types[]: flatbed_cont
+}

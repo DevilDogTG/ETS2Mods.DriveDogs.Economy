@@ -1,0 +1,12 @@
+cargo_data: cargo.dynamite
+{
+	name: "@@cn_dynamite@@"
+	fragility: 0.6
+	adr_class: 1
+	volume: 2.6
+	mass: 520
+	# DDE: vanilla 0.769 - ADR class 1 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 2.836
+	unit_load_time: 78
+	body_types[]: curtainside
+}

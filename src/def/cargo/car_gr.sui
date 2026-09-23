@@ -1,0 +1,13 @@
+cargo_data: cargo.car_gr
+{
+	name: "@@cn_suvs@@"
+	fragility: 0.95
+	valuable: true
+	group[]: machinery
+	volume: 1
+	mass: 121.8
+	# DDE: vanilla 0.228 - vehicle-as-cargo carrier premium (specialized/higher-value freight)
+	unit_reward_per_km: 0.844
+	unit_load_time: 30
+	body_types[]: _car_anscagr
+}

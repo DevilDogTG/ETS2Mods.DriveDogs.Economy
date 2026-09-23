@@ -1,0 +1,12 @@
+cargo_data: cargo.explosives
+{
+	name: "@@cn_explosives@@"
+	fragility: 0.6
+	adr_class: 1
+	volume: 2.6
+	mass: 365
+	# DDE: vanilla 0.761 - ADR class 1 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 2.806
+	unit_load_time: 78
+	body_types[]: curtainside
+}

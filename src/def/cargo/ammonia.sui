@@ -1,0 +1,13 @@
+cargo_data: cargo.ammonia
+{
+	name: "@@cn_anhydrous_ammonia@@"
+	fragility: 0.6
+	adr_class: 2
+	group[]: liquid
+	volume: 1
+	mass: 730
+	# DDE: vanilla 1.05 - ADR class 2 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 3.3
+	unit_load_time: 90
+	body_types[]: gastank
+}

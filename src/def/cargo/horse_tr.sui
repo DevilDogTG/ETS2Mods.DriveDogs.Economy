@@ -1,0 +1,13 @@
+cargo_data: cargo.horse_tr
+{
+	name: "@@cn_horse_trailer@@"
+	fragility: 0.65
+	valuable: true
+	group[]: machinery
+	volume: 1
+	mass: 72
+	# DDE: vanilla 0.21825 - vehicle-as-cargo carrier premium (specialized/higher-value freight)
+	unit_reward_per_km: 0.808
+	unit_load_time: 30
+	body_types[]: _trucanshotr
+}

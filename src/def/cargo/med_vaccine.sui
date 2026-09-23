@@ -1,0 +1,14 @@
+cargo_data: cargo.med_vaccine
+{
+	name: "@@cn_medical_vaccines@@"
+	adr_class: 6
+	group[]: containers
+	prob_coef: 2
+	volume: 2.6
+	mass: 164.5
+	# DDE: vanilla 1.023 - ADR class 6 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 3.3
+	unit_load_time: 78
+	body_types[]: refrigerated
+	body_types[]: insulated
+}

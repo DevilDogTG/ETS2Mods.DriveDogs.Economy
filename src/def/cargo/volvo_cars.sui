@@ -1,0 +1,13 @@
+cargo_data: cargo.volvo_cars
+{
+	name: "@@cn_luxury_suvs@@"
+	fragility: 0.95
+	valuable: true
+	group[]: machinery
+	volume: 1
+	mass: 111
+	# DDE: vanilla 0.249 - vehicle-as-cargo carrier premium (specialized/higher-value freight)
+	unit_reward_per_km: 0.922
+	unit_load_time: 30
+	body_types[]: _car_ansvors
+}

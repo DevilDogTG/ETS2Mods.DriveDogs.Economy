@@ -1,0 +1,13 @@
+cargo_data: cargo.ethane
+{
+	name: "@@cn_ethane@@"
+	fragility: 0.5
+	adr_class: 2
+	group[]: liquid
+	volume: 1
+	mass: 544
+	# DDE: vanilla 0.72 - ADR class 2 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 2.365
+	unit_load_time: 40
+	body_types[]: gastank
+}

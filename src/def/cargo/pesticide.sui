@@ -1,0 +1,15 @@
+cargo_data: cargo.pesticide
+{
+	name: "@@cn_pesticide@@"
+	fragility: 0.5
+	adr_class: 6
+	group[]: liquid
+	group[]: gooseneck
+	volume: 1
+	mass: 270
+	# DDE: vanilla 0.282 - ADR class 6 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 1.855
+	unit_load_time: 15
+	body_types[]: container
+	body_types[]: flatbed_cont
+}

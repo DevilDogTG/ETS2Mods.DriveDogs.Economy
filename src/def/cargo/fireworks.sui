@@ -1,0 +1,12 @@
+cargo_data: cargo.fireworks
+{
+	name: "@@cn_fireworks@@"
+	fragility: 0.5
+	adr_class: 1
+	volume: 2.6
+	mass: 300
+	# DDE: vanilla 0.7 - ADR class 1 hazmat base-rate fix, scaled to class target
+	unit_reward_per_km: 2.581
+	unit_load_time: 78
+	body_types[]: curtainside
+}
