@@ -8,14 +8,20 @@ Composited at 4x (1104x648) then downscaled for anti-aliasing. Unlike the
 BetterFlares headlight mods, this one drops the oncoming-beam layer (not a
 headlight mod) but keeps the road graphic and gold/amber palette matching
 logo.png's own tones.
+
+The version badge is read from manifest.sii's package_version, so the cover
+always matches the build - pack.config.json's prePack runs this before every
+pack.
 """
 import random
+import re
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 LOGO_PATH = ROOT / "logo.png"
 OUT_PATH = ROOT / "src" / "cover.jpg"
+MANIFEST_PATH = ROOT / "src" / "manifest.sii"
 
 SCALE = 4
 FINAL_SIZE = (276, 162)
@@ -33,6 +39,15 @@ SKYLINE_RIM_COLOR = (255, 170, 70)
 WINDOW_COLOR = (255, 196, 84)
 COIN_COLOR = (255, 196, 84)
 COIN_RIM_COLOR = (168, 122, 40)
+BADGE_COLOR = (255, 196, 84)
+BADGE_TEXT_COLOR = (20, 16, 10)
+
+
+def read_version():
+    m = re.search(r'^\s*package_version:\s*"([^"]+)"', MANIFEST_PATH.read_text(encoding="utf-8"), re.MULTILINE)
+    if not m:
+        raise SystemExit(f"No package_version in {MANIFEST_PATH}")
+    return m.group(1)
 
 
 def make_background(size):
@@ -211,17 +226,36 @@ def add_text(img):
     return img
 
 
+def add_version_badge(img, version):
+    """Amber pill in the empty top-right corner - clear of the logo, title,
+    skyline and coins, and still legible at the final 276x162 size."""
+    draw = ImageDraw.Draw(img, "RGBA")
+    w, h = img.size
+    text = f"v{version}"
+    font = ImageFont.truetype(FONT_BOLD, int(h * 0.06))
+    bbox = draw.textbbox((0, 0), text, font=font)
+    pad_x, pad_y = h * 0.02, h * 0.015
+    x1, y0 = w - h * 0.03, h * 0.03
+    x0 = x1 - (bbox[2] - bbox[0]) - 2 * pad_x
+    y1 = y0 + (bbox[3] - bbox[1]) + 2 * pad_y
+    draw.rounded_rectangle([x0, y0, x1, y1], radius=(y1 - y0) / 2, fill=(*BADGE_COLOR, 235))
+    draw.text((x0 + pad_x - bbox[0], y0 + pad_y - bbox[1]), text, font=font, fill=BADGE_TEXT_COLOR)
+    return img
+
+
 def main():
+    version = read_version()
     img = make_background(CANVAS_SIZE)
     img = add_skyline(img)
     img = add_road(img)
     img = add_money_motif(img)
     img = paste_logo(img)
     img = add_text(img)
+    img = add_version_badge(img, version)
     img = img.resize(FINAL_SIZE, Image.LANCZOS)
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     img.save(OUT_PATH, "JPEG", quality=92)
-    print(f"Wrote {OUT_PATH} ({img.size[0]}x{img.size[1]})")
+    print(f"Wrote {OUT_PATH} ({img.size[0]}x{img.size[1]}, v{version})")
 
 
 if __name__ == "__main__":

@@ -1,1 +1,1 @@
-{ "packageName": "drivedog_economy" }
+{ "packageName": "drivedog_economy", "prePack": ["python tools/generate_cover.py"] }

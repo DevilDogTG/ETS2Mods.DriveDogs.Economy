@@ -92,6 +92,11 @@ Mods reviewed for design comparison (not redistributed, not copied wholesale):
 
 Requires `scs_packer` (and `scs_extractor`, for verification) on `PATH`.
 
+Every pack first runs `pack.config.json`'s `prePack` step, `python tools/generate_cover.py`, which
+regenerates `src/cover.jpg` with the current `manifest.sii` version in its top-right badge — so
+Python 3 with Pillow (`pip install pillow`) is also required. Commit the regenerated cover
+alongside a version bump.
+
 - **Local**: `scripts/pack-mod-local.ps1 -RepoRoot <path to this repo>` — produces a versioned
   `.scs` in `output/local/`, named from `pack.config.json`'s `packageName` and
   `manifest.sii`'s `package_version`.
