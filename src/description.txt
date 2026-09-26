@@ -154,29 +154,30 @@ More to come: cargo variety (value, urgency, mass, and hazard class pay differen
 individual cargo types) is a bigger, separate pass and will land in its own update.
 --------------------
 [orange]Cargo Variety
-[normal]A handful of cargo types vanilla priced flatly or backwards now pay closer to what they
-actually demand from the driver. Everything else - the other ~250 cargo types, already
-correctly priced by weight - is untouched.
+[normal]Hazardous cargo and vehicles-as-cargo pay a modest premium over an ordinary load, scaled
+to what the job actually demands from the driver. Everything else - the other ~250 cargo types -
+is untouched.
 
-What changes:
-- Hazardous cargo (anything requiring an ADR placard) now pays according to how dangerous it
-  actually is, instead of vanilla's near-random pricing that sometimes paid hazmat less than
-  ordinary freight. Explosives and toxic/infectious cargo pay the most; corrosives and gases in
-  the middle; flammable liquids and solids the least of the hazmat tiers, but still a real step
-  up from vanilla.
+What changes (compared per full trailer load, not per unit):
+- Hazardous cargo (anything requiring an ADR placard) pays by how dangerous it actually is:
+  explosives about 1.5x an ordinary load, toxic/infectious 1.4x, corrosives 1.35x, gases 1.3x,
+  flammable solids 1.2x. Vanilla already paid these a small premium (1.05x-1.3x); this widens it.
 - Hauling vehicles as cargo (cars, vans, pickups, caravans, horse trailers, and trucks-as-cargo)
-  now pays a real premium instead of vanilla's flat, near-identical low rate for all of them -
-  this is specialized, higher-value freight and is priced like it.
-- Livestock transport (cattle, pigs) pays somewhat more, reflecting the welfare and
-  time-sensitivity real livestock haulage requires.
+  pays about 1.25x an ordinary load, up from vanilla's 1.1x.
+- No single cargo type pays more than 2x an ordinary load, and none pays less than vanilla.
 - Electronics, caviar, and truck batteries now count toward the Valuable Cargo skill's XP and
   revenue bonus, joining the vehicles and heavy machinery that already did in vanilla.
 
 What does NOT change:
-- Every other cargo type's pay rate - vanilla already scales these correctly by weight, so
-  they're left exactly alone rather than getting an arbitrary bump.
+- Flammable liquids (fuel, oil) and livestock - vanilla already pays them a solid premium
+  (about 1.6x and 1.35x an ordinary load), so they're left exactly alone.
+- Every other cargo type's pay rate.
 - The Valuable Cargo skill itself (its bonus curve, max rank) - vanilla's existing skill is
   reused as-is, not modified.
+
+Note: job offers are generated ahead of time and saved with your game. Offers that were already
+listed before you updated this mod keep the pay they were generated with until they expire or
+the job list refreshes - new offers use the new rates.
 --------------------
 [orange]More sections coming
 [normal]Damage & Wear, Fines & Police, the Used Truck Market, Operating Consequences, Job Types &
@@ -184,6 +185,15 @@ Skills, and Cargo Variety are the systems in this pack so far. More economy syst
 documented here as they're added.
 --------------------
 [green]Changelogs
+
+[orange]v1.1.1
+[normal]- Fixed Cargo Variety paying far too much: hazmat and vehicle-carrier jobs could pay 3x-8x an
+  ordinary job (e.g. car transporters at ~EUR 165/km). Rates are now balanced per trailer load,
+  so these jobs pay a modest 1.2x-1.5x premium instead. Fuel/oil and livestock are back to
+  vanilla pay, which already carried a premium.
+
+[orange]v1.1.0
+[normal]- Cargo Variety system (hazmat, vehicle-carrier, livestock pay; more cargo counts as valuable)
 
 [orange]v1.0.0
 [normal]- Initial release: Damage & Wear system
