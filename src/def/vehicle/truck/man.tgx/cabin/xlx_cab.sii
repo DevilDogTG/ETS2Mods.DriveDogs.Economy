@@ -1,0 +1,35 @@
+SiiNunit
+{
+accessory_cabin_data : xlx_cab.man.tgx.cabin
+{
+	name: "@@cabin_xlx@@"
+	# DDE: vanilla 39120 - G1 (2007) x1.05
+	price: 41080
+	unlock: 8
+	icon: "cab_man_tgx_b"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/man_tgx/cabin/cab_b.pmd"
+	collision: "/vehicle/truck/man_tgx/cabin/cab_b.pmc"
+	variant: eu
+	variant_uk: uk
+	look: default
+
+	wiper_model: "/vehicle/truck/man_tgx/wipers.pmd"
+	wiper_anim: "/vehicle/truck/man_tgx/wipers.pma"
+	wiper_model_uk: "/vehicle/truck/man_tgx/wipers_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/man_tgx/wipers_uk.pma"
+
+	windows_model: "/vehicle/truck/man_tgx/win_open.pmd"
+	left_window_anim: "/vehicle/truck/man_tgx/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/man_tgx/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/man.tgx/accessory/doorhndl/shape1.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/accessory/mirror/shape2.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/paint_job/color2.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/head_light/standard.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/interior/standard_mid.sii"
+
+@include "sound.sui"
+}
+}

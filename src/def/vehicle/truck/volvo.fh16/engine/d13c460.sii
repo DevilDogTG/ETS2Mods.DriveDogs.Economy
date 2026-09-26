@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : d13c460.volvo.fh16.engine
+{
+	name: "@@engine_d13c460_euro_5_eev@@"
+	# DDE: vanilla 13440 - G1 (2009 FH gen 3) x1.09
+	price: 14650
+	unlock: 2
+	info[]: "460 @@hp@@ (338@@kw@@)"
+	info[]: "2@@dg@@300 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@400 @@rpm@@"
+	icon: "engine_volvo_d13"
+	part_type: factory
+
+	torque: 2300
+	rpm_limit: 2100
+	volume: 12.8
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/volvo.fh16/accessory/badge/b460.sii"
+}
+}

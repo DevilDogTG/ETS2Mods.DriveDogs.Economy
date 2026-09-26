@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : dc16_620.scania.r.engine
+{
+	name: "@@engine_dc16_17_620_euro_5_v8@@"
+	# DDE: vanilla 23160 - G1 (2009 R gen 3) x1.09
+	price: 25240
+	unlock: 20
+	info[]: "620 @@hp@@ (456@@kw@@)"
+	info[]: "3@@dg@@000 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@400 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 3000
+	volume: 15.6
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.r/badge/r620.sii"
+}
+}

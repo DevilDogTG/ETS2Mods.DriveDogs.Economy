@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2_ext.daf.xf.chassis
+{
+	name: "@@chassis_4x2_extra_tank@@"
+	# DDE: vanilla 29400 - G1 (2005 XF105) x1.05
+	price: 30870
+	unlock: 4
+	info[]: "@@chassis_4x2@@"
+	icon: "chassis_daf_xf_4x2c"
+
+	model: "/vehicle/truck/daf_xf/truck.pmd"
+	collision: "/vehicle/truck/daf_xf/truck.pmc"
+	variant: chs_4x2_ext
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/daf_xf/shadow_4x2_ext.tobj"
+	extended_shadow_intensity: 0.95
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/daf_xf/ui_shadow_4x2_ext.pmd"
+
+	tank_size: 1500
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 4890
+	kerb_weight[]: 2042
+
+	defaults[]: "/def/vehicle/truck/daf.xf/paint_job/color1.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/r_chs_cover/stock.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/s_equip/sidesteps.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/r_bumper/stock.sii"
+
+@include "sound.sui"
+}
+}

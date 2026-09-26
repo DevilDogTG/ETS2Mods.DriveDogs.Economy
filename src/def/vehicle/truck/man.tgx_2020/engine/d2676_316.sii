@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_engine_data : d2676_316.man.tgx_2020.engine
+{
+	name: "@@engine_d2676_lf80_316_euro_6d@@"
+	# DDE: vanilla 11760 - G3 (2020) x1.35
+	price: 15880
+	unlock: 8
+	info[]: "430 @@hp@@ (316@@kw@@)"
+	info[]: "2@@dg@@200 @@nm@@"
+	info[]: "930 @@rpm@@"
+	icon: "engine/man_d2676"
+	part_type: factory
+
+	torque: 2200
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (930, 1)
+	torque_curve[]: (1350, 1)
+	torque_curve[]: (1800, 0.79)
+	torque_curve[]: (1900, 0.75)
+	torque_curve[]: (2100, 0)
+
+	volume: 12.4
+	rpm_limit: 2100
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_2020/accessory/badge_b/hp430.sii"
+	overrides[]: "/def/vehicle/truck/man.tgx_2020/accessory/badge_c/none.sii"
+}
+}

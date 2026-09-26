@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_engine_data : 1851ls.mercedes.actros.engine
+{
+	name: "@@engine_om_542_v8_bluetec5_375@@"
+	# DDE: vanilla 17160 - G1 (2008 MP3) x1.07
+	price: 18360
+	unlock: 16
+	info[]: "510 @@hp@@ (375@@kw@@)"
+	info[]: "2@@dg@@400 @@nm@@"
+	info[]: "1@@dg@@080 @@rpm@@"
+	icon: "engine/mercedes_om542"
+	part_type: factory
+
+	torque: 2400
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1800, 0.85)
+	torque_curve[]: (2000, 0.65)
+	torque_curve[]: (2200, 0)
+
+	volume: 15.93
+	rpm_limit: 2000
+	rpm_range_power: (1400, 1800)
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/mercedes.actros/accessory/badge_b/badge_xx51.sii"
+}
+}

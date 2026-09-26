@@ -1,0 +1,21 @@
+SiiNunit
+{
+accessory_engine_data : dxi11_380.renault.premium.engine
+{
+	name: "@@engine_380dxi_euro5@@"
+	# DDE: vanilla 9000 - G0 (1996, facelift 2006) x0.95
+	price: 8550
+	unlock: 0
+	info[]: "380 @@hp@@ (280@@kw@@)"
+	info[]: "1@@dg@@800 @@nm@@"
+	info[]: "950-1@@dg@@400@@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 1800
+	volume: 10.8
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+}
+}

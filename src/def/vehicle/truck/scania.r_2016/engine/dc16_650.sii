@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_engine_data : dc16_650.scania.r_2016.engine
+{
+	name: "@@engine_dc16_118_650_euro_6_v8@@"
+	# DDE: vanilla 27300 - G3 (2016 NTG) x1.39
+	price: 37950
+	unlock: 20
+	info[]: "650 @@hp@@ (478@@kw@@)"
+	info[]: "3@@dg@@300 @@nm@@"
+	info[]: "950-1@@dg@@350 @@rpm@@"
+	icon: "engine_scania_dc16"
+	part_type: factory
+
+	torque: 3300
+	torque_curve[]: (300, 0.1)
+	torque_curve[]: (440, 0.4)
+	torque_curve[]: (950, 1)
+	torque_curve[]: (1350, 1)
+	torque_curve[]: (1600, 0.85)
+	torque_curve[]: (1900, 0.73)
+	torque_curve[]: (2300, 0.4)
+	torque_curve[]: (2500, 0.1)
+
+	volume: 16.35
+	adblue_consumption: 0.06
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r_2016/badge/r650.sii"
+	overrides[]: "/def/vehicle/truck/scania.r_2016/accessory/c_badge/empty.sii"
+}
+}

@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_engine_data : dc16_520.scania.s_2016.engine
+{
+	name: "@@engine_dc16_116_520_euro_6_v8@@"
+	# DDE: vanilla 23760 - G3 (2016 NTG flagship over R) x1.44
+	price: 34210
+	unlock: 15
+	info[]: "520 @@hp@@ (382@@kw@@)"
+	info[]: "2@@dg@@700 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@300 @@rpm@@"
+	icon: "engine_scania_dc16"
+	part_type: factory
+
+	torque: 2700
+	torque_curve[]: (300, 0.1)
+	torque_curve[]: (440, 0.4)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1600, 0.82)
+	torque_curve[]: (1900, 0.72)
+	torque_curve[]: (2300, 0.4)
+	torque_curve[]: (2500, 0.1)
+
+	volume: 16.3
+	adblue_consumption: 0.06
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.s_2016/badge/s520.sii"
+	overrides[]: "/def/vehicle/truck/scania.s_2016/accessory/c_badge/empty.sii"
+}
+}

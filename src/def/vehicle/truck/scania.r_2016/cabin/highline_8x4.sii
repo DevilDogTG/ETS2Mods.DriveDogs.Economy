@@ -1,0 +1,37 @@
+SiiNunit
+{
+accessory_cabin_data : highline_8x4.scania.r_2016.cabin
+{
+	name: "@@cabin_high_roof@@"
+	# DDE: vanilla 71040 - G3 (2016 NTG) x1.39
+	price: 98750
+	unlock: 16
+	icon: "truck/scania_2016/accessory/cabin/cab_scania_r_2016_highline"
+	part_type: factory
+
+	model: "/vehicle/truck/scania_2016/cabin/cab_r_high_8x4.pmd"
+	collision: "/vehicle/truck/scania_2016/cabin/cab_r_high_8x4.pmc"
+
+	variant: Default
+	variant_uk: uk
+
+	wiper_model: "/vehicle/truck/scania_2016/cabin/wiper_r_eu.pmd"
+	wiper_anim: "/vehicle/truck/scania_2016/cabin/wiper_r_eu.pma"
+	wiper_model_uk: "/vehicle/truck/scania_2016/cabin/wiper_r_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/scania_2016/cabin/wiper_r_uk.pma"
+
+	windows_model: "/vehicle/truck/scania_2016/cabin/win_open_r.pmd"
+	left_window_anim: "/vehicle/truck/scania_2016/cabin/win_open_r_l.pma"
+	right_window_anim: "/vehicle/truck/scania_2016/cabin/win_open_r_r.pma"
+
+	drl_with_headlights: 0.5
+
+	defaults[]: "/def/vehicle/truck/scania.r_2016/paint_job/color0.sii"
+	defaults[]: "/def/vehicle/truck/scania.r_2016/interior/cab_r_high_black_dark.sii"
+	defaults[]: "/def/vehicle/truck/scania.r_2016/accessory/f_light_top/covered.sii"
+
+	suitable_for[]: "8x4.scania.r_2016.chassis"
+
+@include "sound.sui"
+}
+}

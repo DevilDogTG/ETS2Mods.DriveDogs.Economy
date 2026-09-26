@@ -1,0 +1,32 @@
+SiiNunit
+{
+accessory_engine_data : d3876_471.man.tgx_euro6.engine
+{
+	name: "@@engine_d3876_lf03_471_euro_6@@"
+	# DDE: vanilla 21480 - G2 (2012, facelift 2017) x1.20
+	price: 25780
+	unlock: 20
+	info[]: "640 @@hp@@ (471@@kw@@)"
+	info[]: "3@@dg@@000 @@nm@@"
+	info[]: "930-1@@dg@@400 @@rpm@@"
+	icon: "engine/man_d3876"
+	part_type: factory
+
+	torque: 3000
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (550, 0.5)
+	torque_curve[]: (930, 1)
+	torque_curve[]: (1400, 1)
+	torque_curve[]: (1900, 0.77)
+	torque_curve[]: (2200, 0)
+
+	volume: 15.3
+	rpm_limit: 2100
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/badge_b/badge_xx640.sii"
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/accessory/badge_c/none.sii"
+}
+}

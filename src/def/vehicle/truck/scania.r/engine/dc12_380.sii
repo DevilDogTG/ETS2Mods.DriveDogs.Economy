@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_engine_data : dc12_380.scania.r.engine
+{
+	name: "@@engine_dc12_18_380_euro_5@@"
+	# DDE: vanilla 14520 - G1 (2009 R gen 3) x1.09
+	price: 15830
+	unlock: 8
+	info[]: "380 @@hp@@ (280@@kw@@)"
+	info[]: "1@@dg@@900 @@nm@@"
+	info[]: "1@@dg@@100-1@@dg@@400 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 1900
+	volume: 11.7
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.r/badge/r380.sii"
+}
+}

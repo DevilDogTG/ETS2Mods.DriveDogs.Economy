@@ -1,0 +1,53 @@
+SiiNunit
+{
+accessory_chassis_data : 6x4_lng.scania.s_2016.chassis
+{
+	name: "@@chassis_6x4_long@@"
+	# DDE: vanilla 57720 - G3 (2016 NTG flagship over R) x1.44
+	price: 83120
+	unlock: 14
+	part_type: factory
+
+	info[]: "@@chassis_6x4@@"
+	#info[]: "600 + 400 @@unit_l@@"
+	icon: "truck/scania_2016/accessory/chassis/chassis_scania_2016_6x4"
+
+	model: "/vehicle/truck/scania_2016/chassis/chs_6x4_l.pmd"
+	collision: "/vehicle/truck/scania_2016/chassis/chs_6x4_l.pmc"
+
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/scania_2016/shadow_6x4.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	extended_shadow_shared_model_variant: chs_6x4_l
+	ui_shadow: "/vehicle/truck/scania_2016/ui_shadow_6x4.pmd"
+
+	adblue_tank_size: 80
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.080
+	residual_travel[]: 0.080
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: true
+
+	kerb_weight[]: 5650
+	kerb_weight[]: 2335
+	kerb_weight[]: 2335
+
+	defaults[]: "/def/vehicle/truck/scania.s_2016/accessory/r_fender/6x2l_blk.sii"
+	defaults[]: "/def/vehicle/truck/scania.s_2016/accessory/r_chs_cover/stock_6x2l.sii"
+	defaults[]: "/def/vehicle/truck/scania.s_2016/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/scania.s_2016/accessory/tank/6x2l_1000.sii"
+
+	defaults[]: "/def/vehicle/truck/scania.s_2016/cabin/normal.sii"
+
+	lamp_setup: "/def/vehicle/truck/scania.s_2016/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

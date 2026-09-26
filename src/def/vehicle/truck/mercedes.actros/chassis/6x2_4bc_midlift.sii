@@ -1,0 +1,59 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2_4bc_ml.mercedes.actros.chassis
+{
+	name: "@@chassis_6x2_4_midlift@@"
+	# DDE: vanilla 48480 - G1 (2008 MP3) x1.07
+	price: 51870
+	unlock: 12
+	info[]: "@@chassis_6x2_4_midlift@@"
+	icon: "chassis_actros_6x2"
+
+	model: "/vehicle/truck/mercedes_actros_2009/chs_6x2_4_b_c.pmd"
+	collision: "/vehicle/truck/mercedes_actros_2009/chs_6x2_4_b_c.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/mercedes_actros_2009/shadow_6x2.tobj"
+	extended_shadow_intensity: 0.95
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+
+	ui_shadow: "/vehicle/truck/mercedes_actros_2009/ui_shadow_6x2.pmd"
+
+	tank_size: 400
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	steerable_axle[]: true
+	steerable_axle[]: true
+	steerable_axle[]: false
+
+	kerb_weight[]: 4846
+	kerb_weight[]: 1122
+	kerb_weight[]: 1829
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+
+	suitable_for[]: "cabin_l.mercedes.actros.cabin"
+	suitable_for[]: "cabin_l_lw.mercedes.actros.cabin"
+
+	defaults[]: "/def/vehicle/truck/mercedes.actros/accessory/doorstep/shape1_bc.sii"
+	defaults[]: "/def/vehicle/truck/mercedes.actros/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/mercedes.actros/paint_job/color2.sii"
+	defaults[]: "/def/vehicle/truck/mercedes.actros/accessory/r_fender/6x24_plastic.sii"
+	defaults[]: "/def/vehicle/truck/mercedes.actros/accessory/r_bumper/6x24_stock.sii"
+
+	overrides[]: "/def/vehicle/truck/mercedes.actros/accessory/badge_a/badge_25xx.sii"
+
+@include "sound.sui"
+}
+}

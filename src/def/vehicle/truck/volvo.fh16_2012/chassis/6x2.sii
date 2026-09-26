@@ -1,0 +1,52 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2.volvo.fh16_2012.chassis
+{
+	name: "@@chassis_6x2@@"
+	# DDE: vanilla 32400 - G2 (2012 FH gen 4) x1.24
+	price: 40180
+	unlock: 8
+	info[]: "@@chassis_6x2@@"
+	icon: "chassis_volvo_fh16_2012_6x4"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/volvo_fh16_2012/chassis/chs_6x2.pmd"
+	collision: "/vehicle/truck/volvo_fh16_2012/chassis/chs_6x2.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/volvo_fh16_2012/shadow_6x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	extended_shadow_shared_model_variant: chs_6x4
+	ui_shadow: "/vehicle/truck/volvo_fh16_2012/ui_shadow/ui_shadow_6x4.pmd"
+
+	tank_size: 800
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: false
+
+	kerb_weight[]: 5070
+	kerb_weight[]: 1801
+	kerb_weight[]: 1314
+
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/cabin/l2h3.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/paint_job/color4.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/f_bumper/shape01.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/r_bumper/stock.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/r_chs_cover/stock_6x.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/r_fender/stock_6x.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/r_mudflap/stock.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/sideskirt/stock_6x_cg.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/trlr_cables/stock.sii"
+
+@include "sound.sui"
+}
+}

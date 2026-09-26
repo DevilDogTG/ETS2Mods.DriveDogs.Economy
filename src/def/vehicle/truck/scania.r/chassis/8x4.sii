@@ -1,0 +1,60 @@
+SiiNunit
+{
+accessory_chassis_data : 8x4.scania.r.chassis
+{
+	name: "@@chassis_8x4_4_midlift@@"
+	# DDE: vanilla 80880 - G1 (2009 R gen 3) x1.09
+	price: 88160
+	unlock: 16
+	info[]: "@@chassis_8x4_4_midlift@@"
+	icon: "chassis_scania_r_8x4"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/scania_rcab_2009/8x4.pmd"
+	collision: "/vehicle/truck/scania_rcab_2009/8x4.pmc"
+	variant: rc_chs_8x4
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/scania_rcab_2009/shadow_8x4.tobj"
+	extended_shadow_intensity: 1.00
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/scania_rcab_2009/ui_shadow_8x4.pmd"
+
+	tank_size: 700
+
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: true
+
+	steerable_axle[]: true
+	steerable_axle[]: true
+	steerable_axle[]: false
+	steerable_axle[]: false
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+	liftable_axle[]: false
+
+	kerb_weight[]: 5358
+	kerb_weight[]: 3335
+	kerb_weight[]: 1922
+	kerb_weight[]: 1922
+
+	defaults[]: "/def/vehicle/truck/scania.r/cabin/tl_8x4.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/engine/dc16_500.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/trlr_cables/ch_8x4.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/r_bumper/shape1.sii"
+
+@include "sound.sui"
+}
+}

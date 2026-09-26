@@ -1,0 +1,55 @@
+SiiNunit
+{
+accessory_chassis_data: 6x2_ml.scania.streamline.chassis
+{
+	name: "@@chassis_6x2_4_midlift@@"
+	# DDE: vanilla 51120 - G2 (2013 facelift of the 2009 R platform) x1.18
+	price: 60320
+	unlock: 12
+	info[]: "@@chassis_6x2_4_midlift@@"
+	icon: "chassis_scania_r_6x2"	#original scania has mixed icons
+	part_type: factory
+
+	detail_model: "/vehicle/truck/scania_rcab_2009/truck.pmd"
+	collision: "/vehicle/truck/scania_rcab_2009/truck.pmc"
+	variant: sl_chs_6x2
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/scania_rcab_2009/shadow_6x2.tobj"
+	extended_shadow_intensity: 1.00
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/scania_rcab_2009/ui_shadow_6x2.pmd"
+
+	tank_size: 600
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	steerable_axle[]: true
+	steerable_axle[]: true
+	steerable_axle[]: false
+
+	kerb_weight[]: 5074
+	kerb_weight[]: 1205
+	kerb_weight[]: 1808
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+
+	defaults[]: "/def/vehicle/truck/scania.streamline/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/scania.streamline/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/scania.streamline/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/scania.streamline/engine/dc13_360.sii"
+	defaults[]: "/def/vehicle/truck/scania.streamline/cabin/topline.sii"
+	defaults[]: "/def/vehicle/truck/scania.streamline/accessory/r_bumper/shape1.sii"
+
+@include "sound.sui"
+}
+}

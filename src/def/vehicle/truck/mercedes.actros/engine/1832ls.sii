@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_engine_data : 1832ls.mercedes.actros.engine
+{
+	name: "@@engine_om_541_v6_bluetec5_235@@"
+	# DDE: vanilla 10200 - G1 (2008 MP3) x1.07
+	price: 10910
+	unlock: 0
+	info[]: "320 @@hp@@ (235@@kw@@)"
+	info[]: "1@@dg@@650 @@nm@@"
+	info[]: "1@@dg@@080 @@rpm@@"
+	icon: "engine/mercedes_om541"
+	part_type: factory
+
+	torque: 1650
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1700, 0.8)
+	torque_curve[]: (2000, 0.6)
+	torque_curve[]: (2200, 0)
+
+	volume: 11.95
+	rpm_limit: 2000
+	rpm_range_power: (1400, 1800)
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/mercedes.actros/accessory/badge_b/badge_xx32.sii"
+}
+}

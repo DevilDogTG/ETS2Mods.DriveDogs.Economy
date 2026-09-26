@@ -1,0 +1,36 @@
+SiiNunit
+{
+accessory_cabin_data : at_higher.iveco.stralis.cabin
+{
+	name: "@@cabin_active_super@@"
+	# DDE: vanilla 34680 - G1 (2002, AS 2007) x0.99
+	price: 34330
+	unlock: 8
+	icon: "cab_stralis_b"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/iveco_stralis/truck.pmd"
+	collision: "/vehicle/truck/iveco_stralis/truck.pmc"
+	variant: b_cabin
+	variant_uk: b_cabin_uk
+	look: default
+
+	wiper_model: "/vehicle/truck/iveco_stralis/wipers.pmd"
+	wiper_anim: "/vehicle/truck/iveco_stralis/wipers.pma"
+	wiper_model_uk: "/vehicle/truck/iveco_stralis/wipers_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/iveco_stralis/wipers_uk.pma"
+
+	windows_model: "/vehicle/truck/iveco_stralis/win_open.pmd"
+	left_window_anim: "/vehicle/truck/iveco_stralis/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/iveco_stralis/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/iveco.stralis/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/head_light/standard.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/interior/standard.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/accessory/doorhndl/shape1.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/accessory/mirror/shape1.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/accessory/s_mirror/shape1.sii"
+
+@include "sound.sui"
+}
+}

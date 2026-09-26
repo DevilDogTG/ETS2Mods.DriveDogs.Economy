@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : dc13_370.scania.streamline.engine
+{
+	name: "@@engine_dc13_116_370_euro_6@@"
+	# DDE: vanilla 16260 - G2 (2013 facelift of the 2009 R platform) x1.18
+	price: 19190
+	unlock: 3
+	info[]: "370 @@hp@@ (272@@kw@@)"
+	info[]: "1@@dg@@900 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@300 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 1900
+	volume: 12.74
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.streamline/accessory/c_badge/euro6.sii"
+	overrides[]: "/def/vehicle/truck/scania.streamline/badge/r370.sii"
+	overrides[]: "/def/vehicle/truck/scania.streamline/accessory/cor_def/corner_deflector_01.sii"
+}
+}

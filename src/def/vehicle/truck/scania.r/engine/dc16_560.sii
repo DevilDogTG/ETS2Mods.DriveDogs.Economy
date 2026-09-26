@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_engine_data : dc16_560.scania.r.engine
+{
+	name: "@@engine_dc16_18_560_euro_5_v8@@"
+	# DDE: vanilla 21480 - G1 (2009 R gen 3) x1.09
+	price: 23410
+	unlock: 18
+	info[]: "560 @@hp@@ (412@@kw@@)"
+	info[]: "2@@dg@@700 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@400 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 2700
+	volume: 15.6
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.r/badge/r560.sii"
+}
+}

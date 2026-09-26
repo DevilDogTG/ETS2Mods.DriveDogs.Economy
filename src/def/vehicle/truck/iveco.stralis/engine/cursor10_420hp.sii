@@ -1,0 +1,20 @@
+SiiNunit
+{
+accessory_engine_data : cur10_420.iveco.stralis.engine
+{
+	name: "@@engine_cursor_10_420@@"
+	# DDE: vanilla 12900 - G1 (2002, AS 2007) x0.99
+	price: 12770
+	unlock: 10
+	info[]: "420 @@hp@@ (309@@kw@@)"
+	info[]: "1@@dg@@900 @@nm@@"
+	info[]: "1@@dg@@050-1@@dg@@550 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 1900
+	volume: 10.3
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+}
+}

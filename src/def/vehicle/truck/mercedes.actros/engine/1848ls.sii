@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_engine_data : 1848ls.mercedes.actros.engine
+{
+	name: "@@engine_om_541_v6_bluetec5_350@@"
+	# DDE: vanilla 15540 - G1 (2008 MP3) x1.07
+	price: 16630
+	unlock: 14
+	info[]: "476 @@hp@@ (350@@kw@@)"
+	info[]: "2@@dg@@300 @@nm@@"
+	info[]: "1@@dg@@080 @@rpm@@"
+	icon: "engine/mercedes_om541"
+	part_type: factory
+
+	torque: 2300
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (1000, 0.95)
+	torque_curve[]: (1080, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1700, 0.85)
+	torque_curve[]: (2000, 0.65)
+	torque_curve[]: (2200, 0)
+
+	volume: 11.95
+	rpm_limit: 2000
+	rpm_range_power: (1400, 1800)
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/mercedes.actros/accessory/badge_b/badge_xx48.sii"
+}
+}

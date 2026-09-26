@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : dc13_480.scania.r.engine
+{
+	name: "@@engine_dc13_07_480_euro_5@@"
+	# DDE: vanilla 19440 - G1 (2009 R gen 3) x1.09
+	price: 21190
+	unlock: 14
+	info[]: "480 @@hp@@ (353@@kw@@)"
+	info[]: "2@@dg@@500 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@300 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 2500
+	volume: 12.74
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.r/badge/r480.sii"
+}
+}

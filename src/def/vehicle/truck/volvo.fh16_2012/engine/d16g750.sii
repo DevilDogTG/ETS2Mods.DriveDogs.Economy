@@ -1,0 +1,25 @@
+SiiNunit
+{
+accessory_engine_data : d16g750.volvo.fh16_2012.engine
+{
+	name: "@@engine_d16g750_euro_5_eev@@"
+	# DDE: vanilla 25560 - G2 (2012 FH gen 4) x1.24
+	price: 31690
+	unlock: 25
+	info[]: "750 @@hp@@ (551@@kw@@)"
+	info[]: "3@@dg@@550 @@nm@@"
+	info[]: "1@@dg@@050-1@@dg@@400 @@rpm@@"
+
+	icon: "engine_volvo_d16"
+	part_type: factory
+
+	torque: 3550
+	rpm_limit: 2100
+	volume: 16.1
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/badge/badge_750.sii"
+}
+}

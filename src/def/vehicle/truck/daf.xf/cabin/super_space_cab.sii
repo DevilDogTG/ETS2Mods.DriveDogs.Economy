@@ -1,0 +1,40 @@
+SiiNunit
+{
+accessory_cabin_data : super_s_cab.daf.xf.cabin
+{
+	name: "@@cabin_super_space@@"
+	# DDE: vanilla 60600 - G1 (2005 XF105) x1.05
+	price: 63630
+	unlock: 12
+
+	detail_model: "/vehicle/truck/daf_xf/truck.pmd"
+	collision: "/vehicle/truck/daf_xf/truck.pmc"
+
+	variant: a_cabin
+	variant_uk: a_cabin_uk
+	look: default
+	icon: "cab_daf_xf_a"
+	part_type: factory
+
+	wiper_model: "/vehicle/truck/daf_xf/wipers.pmd"
+	wiper_anim: "/vehicle/truck/daf_xf/wipers.pma"
+	wiper_model_uk: "/vehicle/truck/daf_xf/wipers_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/daf_xf/wipers_uk.pma"
+
+	windows_model: "/vehicle/truck/daf_xf/win_open.pmd"
+	left_window_anim: "/vehicle/truck/daf_xf/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/daf_xf/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/daf.xf/paint_job/color1.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/interior/standard.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/head_light/xenon.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/doorhndl/shape1.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/mirror/shape2.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/s_mirror/shape1.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/f_intake_cab/stock.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/f_fender/stock.sii"
+	defaults[]: "/def/vehicle/truck/daf.xf/accessory/f_wnd_frame/stock.sii"
+
+@include "sound.sui"
+}
+}

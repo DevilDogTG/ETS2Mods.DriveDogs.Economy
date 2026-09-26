@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : dc13_360.scania.r.engine
+{
+	name: "@@engine_dc13_06_360_euro_5@@"
+	# DDE: vanilla 14160 - G1 (2009 R gen 3) x1.09
+	price: 15430
+	unlock: 0
+	info[]: "360 @@hp@@ (265@@kw@@)"
+	info[]: "1@@dg@@850 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@300 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 1850
+	volume: 12.74
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.r/badge/r360.sii"
+}
+}

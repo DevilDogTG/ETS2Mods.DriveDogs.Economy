@@ -1,0 +1,36 @@
+SiiNunit
+{
+accessory_engine_data : d3876_427.man.tgx_2020.engine
+{
+	name: "@@engine_d3876_lf11_427_euro_6d@@"
+	# DDE: vanilla 18720 - G3 (2020) x1.35
+	price: 25270
+	unlock: 20
+	info[]: "580 @@hp@@ (427@@kw@@)"
+	info[]: "2@@dg@@900 @@nm@@"
+	info[]: "900 @@rpm@@"
+	icon: "engine/man_d3876"
+	part_type: factory
+
+	torque: 2900
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (900, 1)
+	torque_curve[]: (1380, 1)
+	torque_curve[]: (1500, 0.931)
+	torque_curve[]: (1600, 0.8707)
+	torque_curve[]: (1700, 0.8276)
+	torque_curve[]: (1800, 0.7931)
+	torque_curve[]: (1900, 0.77)
+	torque_curve[]: (2100, 0)
+
+	volume: 15.3
+	rpm_limit: 2100
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_2020/accessory/badge_b/hp580.sii"
+	overrides[]: "/def/vehicle/truck/man.tgx_2020/accessory/badge_c/d38.sii"
+}
+}

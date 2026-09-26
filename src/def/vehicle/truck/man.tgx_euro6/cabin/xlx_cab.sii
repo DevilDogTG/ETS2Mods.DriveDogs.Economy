@@ -1,0 +1,35 @@
+SiiNunit
+{
+accessory_cabin_data : xlx_cab.man.tgx_euro6.cabin
+{
+	name: "@@cabin_xlx@@"
+	# DDE: vanilla 39120 - G2 (2012, facelift 2017) x1.20
+	price: 46940
+	unlock: 8
+	icon: "cabin/man_tgx_euro6/cab_xlx"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/man_tgx_euro6/cab_xlx.pmd"
+	model: "/vehicle/truck/man_tgx_euro6/cab_xlx.pmd"
+	collision: "/vehicle/truck/man_tgx_euro6/cab_xlx.pmc"
+	variant: eu
+	variant_uk: uk
+	look: default
+
+	drl_with_headlights: 0.2
+
+	wiper_model: "/vehicle/truck/man_tgx_euro6/wipers.pmd"
+	wiper_anim: "/vehicle/truck/man_tgx_euro6/wipers.pma"
+	wiper_model_uk: "/vehicle/truck/man_tgx_euro6/wipers_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/man_tgx_euro6/wipers_uk.pma"
+
+	windows_model: "/vehicle/truck/man_tgx_euro6/win_open.pmd"
+	left_window_anim: "/vehicle/truck/man_tgx_euro6/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/man_tgx_euro6/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/man.tgx_euro6/interior/standard_xlx.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx_euro6/paint_job/ral_9016.sii"
+
+@include "sound.sui"
+}
+}
