@@ -6,8 +6,8 @@ cargo_data: cargo.car_it
 	group[]: machinery
 	volume: 1
 	mass: 61.6
-	# DDE: vanilla 0.2115 - vehicle-as-cargo carrier premium (specialized/higher-value freight)
-	unit_reward_per_km: 0.783
+	# DDE: vanilla 0.2115 - vehicle-as-cargo carrier premium, 21.1 -> 23.9 EUR/km per load (1.20x median)
+	unit_reward_per_km: 0.239
 	unit_load_time: 30
 	body_types[]: _car_anscait
 }

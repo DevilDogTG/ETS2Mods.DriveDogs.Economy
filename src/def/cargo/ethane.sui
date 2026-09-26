@@ -6,8 +6,8 @@ cargo_data: cargo.ethane
 	group[]: liquid
 	volume: 1
 	mass: 544
-	# DDE: vanilla 0.72 - ADR class 2 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 2.365
+	# DDE: vanilla 0.72 - ADR class 2 hazmat premium, 24.1 -> 27.1 EUR/km per load (1.36x median)
+	unit_reward_per_km: 0.808
 	unit_load_time: 40
 	body_types[]: gastank
 }

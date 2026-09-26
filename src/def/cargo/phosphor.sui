@@ -6,8 +6,8 @@ cargo_data: cargo.phosphor
 	group[]: gooseneck
 	volume: 1
 	mass: 220
-	# DDE: vanilla 0.254 - ADR class 4 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 1.097
+	# DDE: vanilla 0.254 - ADR class 4 hazmat premium, 20.3 -> 23.1 EUR/km per load (1.16x median)
+	unit_reward_per_km: 0.289
 	unit_load_time: 15
 	body_types[]: container
 	body_types[]: flatbed_cont

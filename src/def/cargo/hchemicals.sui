@@ -6,7 +6,7 @@ cargo_data: cargo.hchemicals
 	group[]: liquid
 	volume: 0.3
 	mass: 200
-	# DDE: vanilla 0.327 - ADR class 6 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 2.151
+	# DDE: vanilla 0.327 - ADR class 6 hazmat premium, 29.4 -> 32.8 EUR/km per load (1.64x median)
+	unit_reward_per_km: 0.364
 	body_types[]: chemtank
 }

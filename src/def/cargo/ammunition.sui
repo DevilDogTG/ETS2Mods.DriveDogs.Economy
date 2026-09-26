@@ -5,8 +5,8 @@ cargo_data: cargo.ammunition
 	adr_class: 1
 	volume: 2.6
 	mass: 570
-	# DDE: vanilla 0.753 - ADR class 1 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 2.777
+	# DDE: vanilla 0.753 - ADR class 1 hazmat premium, 24.8 -> 29.7 EUR/km per load (1.49x median)
+	unit_reward_per_km: 0.901
 	unit_load_time: 78
 	body_types[]: curtainside
 }

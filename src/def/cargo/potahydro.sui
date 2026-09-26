@@ -6,8 +6,8 @@ cargo_data: cargo.potahydro
 	group[]: liquid
 	volume: 0.3
 	mass: 200
-	# DDE: vanilla 0.292 - ADR class 8 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 1.014
+	# DDE: vanilla 0.292 - ADR class 8 hazmat premium, 26.3 -> 27.7 EUR/km per load (1.39x median)
+	unit_reward_per_km: 0.308
 	unit_load_time: 40
 	body_types[]: chemtank
 }

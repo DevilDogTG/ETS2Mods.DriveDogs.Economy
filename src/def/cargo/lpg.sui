@@ -6,8 +6,8 @@ cargo_data: cargo.lpg
 	group[]: liquid
 	volume: 1
 	mass: 265
-	# DDE: vanilla 0.35 - ADR class 2 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 1.149
+	# DDE: vanilla 0.35 - ADR class 2 hazmat premium, 28.0 -> 31.4 EUR/km per load (1.58x median)
+	unit_reward_per_km: 0.393
 	unit_load_time: 40
 	body_types[]: container
 	body_types[]: flatbed_cont

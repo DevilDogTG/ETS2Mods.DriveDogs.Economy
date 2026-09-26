@@ -6,8 +6,8 @@ cargo_data: cargo.fluorine
 	group[]: gooseneck
 	volume: 1
 	mass: 170
-	# DDE: vanilla 0.279 - ADR class 2 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 0.916
+	# DDE: vanilla 0.279 - ADR class 2 hazmat premium, 22.3 -> 25.0 EUR/km per load (1.26x median)
+	unit_reward_per_km: 0.313
 	unit_load_time: 15
 	body_types[]: container
 	body_types[]: flatbed_cont
