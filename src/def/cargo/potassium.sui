@@ -6,8 +6,8 @@ cargo_data: cargo.potassium
 	group[]: gooseneck
 	volume: 1
 	mass: 250
-	# DDE: vanilla 0.281 - ADR class 4 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 1.214
+	# DDE: vanilla 0.281 - ADR class 4 hazmat premium, 22.5 -> 25.5 EUR/km per load (1.28x median)
+	unit_reward_per_km: 0.319
 	unit_load_time: 15
 	body_types[]: container
 	body_types[]: flatbed_cont

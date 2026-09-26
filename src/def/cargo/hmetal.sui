@@ -7,8 +7,8 @@ cargo_data: cargo.hmetal
 	group[]: gooseneck
 	volume: 1
 	mass: 250
-	# DDE: vanilla 0.3 - ADR class 6 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 1.973
+	# DDE: vanilla 0.3 - ADR class 6 hazmat premium, 24.0 -> 26.7 EUR/km per load (1.34x median)
+	unit_reward_per_km: 0.334
 	unit_load_time: 15
 	body_types[]: container
 	body_types[]: flatbed_cont

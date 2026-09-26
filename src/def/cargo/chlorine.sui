@@ -6,8 +6,8 @@ cargo_data: cargo.chlorine
 	group[]: gooseneck
 	volume: 1
 	mass: 210
-	# DDE: vanilla 0.284 - ADR class 2 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 0.933
+	# DDE: vanilla 0.284 - ADR class 2 hazmat premium, 22.7 -> 25.5 EUR/km per load (1.28x median)
+	unit_reward_per_km: 0.319
 	unit_load_time: 15
 	body_types[]: container
 	body_types[]: flatbed_cont

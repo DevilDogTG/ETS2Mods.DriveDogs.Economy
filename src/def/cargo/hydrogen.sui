@@ -6,8 +6,8 @@ cargo_data: cargo.hydrogen
 	group[]: adr
 	volume: 1
 	mass: 71
-	# DDE: vanilla 0.15 - ADR class 2 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 0.493
+	# DDE: vanilla 0.15 - ADR class 2 hazmat premium, 12.0 -> 13.4 EUR/km per load (0.67x median)
+	unit_reward_per_km: 0.168
 	unit_load_time: 40
 	body_types[]: container
 	body_types[]: flatbed_cont

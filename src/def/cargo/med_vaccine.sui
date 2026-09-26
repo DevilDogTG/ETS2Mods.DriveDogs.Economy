@@ -6,8 +6,8 @@ cargo_data: cargo.med_vaccine
 	prob_coef: 2
 	volume: 2.6
 	mass: 164.5
-	# DDE: vanilla 1.023 - ADR class 6 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 3.3
+	# DDE: vanilla 1.023 - ADR class 6 hazmat premium, 33.8 -> 37.6 EUR/km per load (1.89x median)
+	unit_reward_per_km: 1.14
 	unit_load_time: 78
 	body_types[]: refrigerated
 	body_types[]: insulated

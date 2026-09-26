@@ -6,8 +6,8 @@ cargo_data: cargo.volvo_tr
 	group[]: machinery
 	volume: 1
 	mass: 146.8
-	# DDE: vanilla 0.27255 - vehicle-as-cargo carrier premium (specialized/higher-value freight)
-	unit_reward_per_km: 1.009
+	# DDE: vanilla 0.27255 - vehicle-as-cargo carrier premium, 27.3 -> 30.8 EUR/km per load (1.55x median)
+	unit_reward_per_km: 0.308
 	unit_load_time: 30
 	body_types[]: _trucansvotr
 }

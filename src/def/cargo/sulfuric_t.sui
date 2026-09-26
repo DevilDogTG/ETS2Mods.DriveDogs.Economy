@@ -7,8 +7,8 @@ cargo_data: cargo.sulfuric_t
 	group[]: gooseneck
 	volume: 1
 	mass: 1800
-	# DDE: vanilla 2.69 - ADR class 8 hazmat base-rate fix, scaled to class target
-	unit_reward_per_km: 3.3
+	# DDE: vanilla 2.69 - ADR class 8 hazmat premium, 37.7 -> 39.8 EUR/km per load (2.00x median)
+	unit_reward_per_km: 2.842
 	unit_load_time: 150
 	body_types[]: chemtank
 }
