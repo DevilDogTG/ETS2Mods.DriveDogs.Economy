@@ -135,9 +135,11 @@ actually carrying the risk, and finally rewarding a skill vanilla forgot to rewa
 
 What changes:
 - Cargo Market jobs (where you own the trailer as well as the truck) now pay noticeably more per
-  km than Freight Market jobs - 1.4x the base rate instead of vanilla's barely-there 1.0x, a real
-  premium for carrying full responsibility, including the trailer's own damage and insurance risk
-  through the Damage & Wear and Operating Consequences systems above.
+  km than Freight Market jobs - about 1.33x the Freight Market rate for the same cargo and trailer,
+  instead of vanilla's barely-there 1.11x, a real premium for carrying full responsibility,
+  including the trailer's own damage and insurance risk through the Damage & Wear and Operating
+  Consequences systems above. Bigger trailers (doubles, B-doubles, HCT) carry more cargo and pay
+  more on top of that, as in the base game.
 - The ADR (hazardous materials) skill now grants a revenue bonus as you rank it up, exactly like
   the Valuable Cargo, Fragile Cargo, and Urgent Delivery skills already did (+5% per rank, up to
   +30% at max rank). Vanilla never actually gave this skill a pay bonus at all - specializing in
@@ -219,6 +221,10 @@ Skills, Cargo Variety, and New Truck Prices are the systems in this pack so far.
 documented here as they're added.
 --------------------
 [green]Changelogs
+
+[orange]v1.2.1
+[normal]- Lowered the Cargo Market (own trailer) premium: about 1.33x the Freight Market rate for the
+  same trailer, down from 1.56x.
 
 [orange]v1.2.0
 [normal]- New Truck Prices system: every truck line priced by model generation (oldest models about
