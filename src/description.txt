@@ -179,12 +179,51 @@ Note: job offers are generated ahead of time and saved with your game. Offers th
 listed before you updated this mod keep the pay they were generated with until they expire or
 the job list refreshes - new offers use the new rates.
 --------------------
+[orange]New Truck Prices
+[normal]In the base game a truck's price only depends on how big its parts are - a 2009 Volvo FH16
+costs exactly the same as a brand-new 2024 FH. Now every truck is priced by the generation it
+belongs to: older models are the value choice, the newest ones cost what a current flagship should.
+
+What changes:
+- Every truck line in the game (all 26, including the newest ones) is priced by its real-world
+  generation. The oldest designs (Renault Magnum and Premium, Iveco Stralis) stay at roughly
+  base-game prices; each newer generation costs more, up to about 1.5x the base game for the
+  2024 Volvo FH.
+- Premium brands (Scania, Volvo, Mercedes) sit a little above the others within the same
+  generation, and value brands (Renault, Iveco) a little below. The Scania S costs more than the
+  R of the same generation.
+- Battery-electric trucks (DAF XF Electric, Renault E-Tech T, Scania S BEV) cost about 2.3x the
+  base game - a real premium over a diesel, as in real life.
+- Chassis, cabin, engine, and transmission are all repriced by the same factor for a given truck
+  line, so a bigger engine still costs more than a smaller one of the same truck.
+- Used trucks follow the same curve, since their price starts from these same part prices.
+  An older model is now clearly cheaper second-hand than its newer replacement.
+
+What does NOT change:
+- The cheapest new truck you can buy costs about the same as in the base game - starting out is
+  not easier or harder.
+- Headlights, accessories, paint jobs, and interiors - all base-game prices.
+- How any truck drives or performs.
+
+Compatibility: this pack replaces the chassis, cabin, engine, and transmission files of every
+truck. Better Flares works fine alongside it. Frkn64's "Realistic Truck Physics" also replaces
+every chassis file, so don't run both - whichever loads higher wins, and the other half is lost.
+
+Note: used-truck listings already on the market when you install or update this pack keep their
+old price until they expire (see the Used Truck Market note above). New-truck dealer prices
+update immediately.
+--------------------
 [orange]More sections coming
 [normal]Damage & Wear, Fines & Police, the Used Truck Market, Operating Consequences, Job Types &
-Skills, and Cargo Variety are the systems in this pack so far. More economy systems will be
+Skills, Cargo Variety, and New Truck Prices are the systems in this pack so far. More economy systems will be
 documented here as they're added.
 --------------------
 [green]Changelogs
+
+[orange]v1.2.0
+[normal]- New Truck Prices system: every truck line priced by model generation (oldest models about
+  base-game price, newest up to ~1.5x, battery-electric ~2.3x), chassis, cabin, engine and
+  transmission only.
 
 [orange]v1.1.1
 [normal]- Fixed Cargo Variety paying far too much: hazmat and vehicle-carrier jobs could pay 3x-8x an
