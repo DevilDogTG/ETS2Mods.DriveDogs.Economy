@@ -5,7 +5,7 @@ reviewed field-by-field against vanilla (and, where one exists, a reference mod)
 written — this isn't a bundle of other people's mods, it's a set of deliberate design decisions,
 each one documented.
 
-**Status: v1.2.1.** Targets ETS2 **1.61.1.0**, no paid DLC required — every change is to
+**Status: v1.2.2.** Targets ETS2 **1.61.1.0**, no paid DLC required — every change is to
 base-game `def/` files, plus the free per-truck DLC archives for the nine newest truck lines
 (owned by every player).
 
@@ -13,7 +13,7 @@ base-game `def/` files, plus the free per-truck DLC archives for the nine newest
 
 | System | Source file(s) | Summary |
 |---|---|---|
-| Damage & Wear | `src/def/damage_data.sii` | Crashes deal 2x damage and leave a larger permanent mark (1.5x unfixable-damage ratios); routine engine/transmission wear is gentler; cabin/chassis pick up light mileage-based wear for maintenance flavor. |
+| Damage & Wear | `src/def/damage_data.sii` | Crashes deal 2x damage and leave a larger permanent mark (1.5x unfixable-damage ratios); routine engine/transmission wear is gentler; cabin/chassis pick up light mileage-based wear for maintenance flavor. Owned trailers wear body/chassis at 1e-5/km — the running cost the Cargo Market premium pays for, scaled by trailer price. |
 | Fines & Police | `src/def/police_data.sii` | Removes "magical" fines (several violations now require a real nearby police car to trigger) while keeping every fine amount and the speeding-multiplier curve at full vanilla severity. |
 | Used Truck Market | `src/def/used_vehicle_config.sii` | Used trucks carry real repairable wear and, at higher mileage, genuine permanent damage. Mileage range extended to 1.2M km with no low-mileage floor. Career-level progression gates market access (full unlock at level 30, a mid-career bump at 15). |
 | Operating Consequences | `src/def/economy_data.sii` | Cargo damage, abandoned jobs, towing, emergency refuel/recharge, and truck resale all cost more. Delivery deadlines are rebuilt around a realistic 45 km/h average pace instead of vanilla's 62 km/h, with `delivery_window[]` rescaled to hold the job-difficulty mix roughly where vanilla had it. Job pay itself, driver economics, and bank loans are untouched. |

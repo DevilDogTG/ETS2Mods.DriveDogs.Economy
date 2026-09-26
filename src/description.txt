@@ -19,6 +19,9 @@ What changes:
 - Engine and transmission wear slower per km than vanilla, so that part of routine servicing
   is a bit less frequent.
 - Wheel wear is unchanged from vanilla.
+- Owned trailers now wear their body and chassis as you drive (about 1% per 1000 km), so owning
+  a trailer has a running cost - bigger for an expensive reefer than for a simple curtainsider.
+  The Cargo Market premium (Job Types & Skills below) is sized to cover it with room to spare.
 
 What does NOT change:
 - Vanilla's crash-to-cargo damage behavior.
@@ -138,8 +141,9 @@ What changes:
   km than Freight Market jobs - about 1.33x the Freight Market rate for the same cargo and trailer,
   instead of vanilla's barely-there 1.11x, a real premium for carrying full responsibility,
   including the trailer's own damage and insurance risk through the Damage & Wear and Operating
-  Consequences systems above. Bigger trailers (doubles, B-doubles, HCT) carry more cargo and pay
-  more on top of that, as in the base game.
+  Consequences systems above. Part of that premium goes to the owned trailer's running wear, so
+  what you keep is a smaller, honest margin. Bigger trailers (doubles, B-doubles, HCT) carry more
+  cargo and pay more on top of that, as in the base game.
 - The ADR (hazardous materials) skill now grants a revenue bonus as you rank it up, exactly like
   the Valuable Cargo, Fragile Cargo, and Urgent Delivery skills already did (+5% per rank, up to
   +30% at max rank). Vanilla never actually gave this skill a pay bonus at all - specializing in
@@ -221,6 +225,11 @@ Skills, Cargo Variety, and New Truck Prices are the systems in this pack so far.
 documented here as they're added.
 --------------------
 [green]Changelogs
+
+[orange]v1.2.2
+[normal]- Owned trailers now wear their body and chassis with distance (~1% per 1000 km), giving the
+  Cargo Market premium a real running cost to pay for. The repair bill follows the trailer's
+  price, so an expensive reefer costs more to run than a curtainsider.
 
 [orange]v1.2.1
 [normal]- Lowered the Cargo Market (own trailer) premium: about 1.33x the Freight Market rate for the

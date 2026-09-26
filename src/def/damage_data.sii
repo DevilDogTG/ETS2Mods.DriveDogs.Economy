@@ -58,9 +58,14 @@ vehicle_damage_data : .damage_data
 
 	# trailer wear per km of drive
 
-	trailer_body_wear:	0.0
-	trailer_chassis_wear:	0.0
-	trailer_wheel_wear:	2e-6
+	# DDE: vanilla 0.0 - an owned trailer's running cost (upkeep + depreciation, not just
+	# mechanical wear), paid for by the Cargo Market premium in economy_data.sii. Same rate on
+	# body and chassis so the repair bill follows the trailer's price: an 80k reefer costs ~3x
+	# a 25k curtainsider per km. 1% per 1000 km - a conservative first value, playtest-calibrated.
+	# Far above the truck's cab/chassis rates on purpose: those are maintenance flavor only.
+	trailer_body_wear:	1e-5
+	trailer_chassis_wear:	1e-5
+	trailer_wheel_wear:	2e-6		# unchanged from vanilla
 
 	trailer_body_wear_unfixable:		0.0
 	trailer_chassis_wear_unfixable:		0.0

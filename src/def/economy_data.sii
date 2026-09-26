@@ -109,7 +109,8 @@ economy_data : economy.data.storage
 	# DDE: vanilla 1.0 - Cargo Market means owning the trailer too (damage/insurance risk is
 	# yours), so it should pay a real premium over Freight Market instead of vanilla's marginal
 	# 11% edge (1.0 vs 0.9). 1.2 = 1.33x Freight Market for the same trailer; v1.0-v1.2.0 used
-	# 1.4 (1.56x), which playtested as far too generous
+	# 1.4 (1.56x), which playtested as far too generous. Part of the premium is spent on owned
+	# trailer body/chassis wear (damage_data.sii), leaving a net margin of roughly 10-25%
 	cargo_market_revenue_coef_per_km: 1.2 # Revenue coefficient per km used during cargo market jobs.
 
 	reward_bonus_level: 0.015
