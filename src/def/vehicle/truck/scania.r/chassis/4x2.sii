@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2.scania.r.chassis
+{
+	name: "@@chassis_4x2@@"
+	# DDE: vanilla 23520 - G1 (2009 R gen 3) x1.09
+	price: 25640
+	unlock: 0
+	info[]: "@@chassis_4x2@@"
+	icon: "chassis_scania_r_4x2"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/scania_rcab_2009/truck.pmd"
+	collision: "/vehicle/truck/scania_rcab_2009/truck.pmc"
+	variant: rc_chs_4x2
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/scania_rcab_2009/shadow_4x2.tobj"
+	extended_shadow_intensity: 1.05
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/scania_rcab_2009/ui_shadow_4x2.pmd"
+
+	tank_size: 1400
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 5345
+	kerb_weight[]: 1820
+
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/cabin/topline.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/r_bumper/shape1.sii"
+
+@include "sound.sui"
+}
+}

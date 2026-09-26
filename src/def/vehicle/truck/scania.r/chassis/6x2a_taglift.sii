@@ -1,0 +1,50 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2a_tl.scania.r.chassis
+{
+	name: "@@chassis_6x2_taglift@@"
+	# DDE: vanilla 43920 - G1 (2009 R gen 3) x1.09
+	price: 47870
+	unlock: 10
+	info[]: "@@chassis_6x2_taglift@@"
+	icon: "chassis_scania_r_6x4"
+
+	detail_model: "/vehicle/truck/scania_rcab_2009/truck.pmd"
+	collision: "/vehicle/truck/scania_rcab_2009/truck.pmc"
+	variant: rc_chs_6x4
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/scania_rcab_2009/shadow_6x4.tobj"
+	extended_shadow_intensity: 1.00
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/scania_rcab_2009/ui_shadow_6x4.pmd"
+
+	tank_size: 600
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: false
+
+	kerb_weight[]: 5358
+	kerb_weight[]: 1802
+	kerb_weight[]: 1352
+
+	liftable_axle[]: false
+	liftable_axle[]: false
+	liftable_axle[]: true
+
+	defaults[]: "/def/vehicle/truck/scania.r/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/engine/dc13_480.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/cabin/topline.sii"
+	defaults[]: "/def/vehicle/truck/scania.r/accessory/r_bumper/shape1.sii"
+
+@include "sound.sui"
+}
+}

@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_engine_data : d1556_243.man.tgx_euro6.engine
+{
+	name: "@@engine_d1556_lf09_243_euro_6d@@"
+	# DDE: vanilla 8160 - G2 (2012, facelift 2017) x1.20
+	price: 9790
+	unlock: 0
+	info[]: "330 @@hp@@ (243@@kw@@)"
+	info[]: "1@@dg@@600 @@nm@@"
+	info[]: "1@@dg@@000 @@rpm@@"
+	icon: "engine/man_d1556"
+	part_type: factory
+
+	torque: 1600
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (600, 0.5)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1400, 1)
+	torque_curve[]: (1800, 0.79)
+	torque_curve[]: (2100, 0.5)
+	torque_curve[]: (2200, 0)
+
+	volume: 9.0
+	rpm_limit: 2100
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/badge_b/badge_xx330.sii"
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/accessory/badge_c/el3.sii"
+}
+}

@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : d13c420.volvo.fh16_2012.engine
+{
+	name: "@@engine_d13c420_euro_5_eev@@"
+	# DDE: vanilla 11700 - G2 (2012 FH gen 4) x1.24
+	price: 14510
+	unlock: 0
+	info[]: "420 @@hp@@ (309@@kw@@)"
+	info[]: "2@@dg@@100 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@400 @@rpm@@"
+	icon: "engine_volvo_d13"
+	part_type: factory
+
+	torque: 2100
+	rpm_limit: 2100
+	volume: 12.8
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/badge/badge_420.sii"
+}
+}

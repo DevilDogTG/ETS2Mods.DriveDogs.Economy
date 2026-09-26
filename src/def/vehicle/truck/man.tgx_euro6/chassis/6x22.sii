@@ -1,0 +1,52 @@
+SiiNunit
+{
+accessory_chassis_data : 6x22.man.tgx_euro6.chassis
+{
+	name: "@@chassis_6x2_2_midlift@@"
+	# DDE: vanilla 48720 - G2 (2012, facelift 2017) x1.20
+	price: 58460
+	unlock: 10
+	info[]: "@@chassis_6x2_2_midlift@@"
+	icon: "chassis/man_tgx_euro6/chs_6x22"
+
+	detail_model: "/vehicle/truck/man_tgx_euro6/chs_6x22.pmd"
+	model: "/vehicle/truck/man_tgx_euro6/chs_6x22.pmd"
+	collision: "/vehicle/truck/man_tgx_euro6/chs_6x22.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/man_tgx_euro6/shadow_6x24.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/man_tgx_euro6/ui_shadow_6x22.pmd"
+
+	tank_size: 450
+	adblue_tank_size: 24
+	air_tank_pressure: 11.5
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+
+	kerb_weight[]: 5110
+	kerb_weight[]: 1222
+	kerb_weight[]: 1833
+
+	defaults[]: "/def/vehicle/truck/man.tgx_euro6/accessory/r_fender/stock_6x22.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx_euro6/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx_euro6/paint_job/ral_9016.sii"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/badge_a/badge_26xx.sii"
+
+@include "sound.sui"
+}
+}

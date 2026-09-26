@@ -1,0 +1,21 @@
+SiiNunit
+{
+accessory_engine_data : dxi13_520.renault.magnum.engine
+{
+	name: "@@engine_520dxi_euro5@@"
+	# DDE: vanilla 18360 - G0 (1990, last facelift 2008) x0.95
+	price: 17440
+	unlock: 16
+	info[]: "520 @@hp@@ (382@@kw@@)"
+	info[]: "2@@dg@@550 @@nm@@"
+	info[]: "1@@dg@@050-1@@dg@@430 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 2550
+	volume: 12.8
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+}
+}

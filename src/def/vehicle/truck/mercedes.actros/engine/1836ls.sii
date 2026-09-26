@@ -1,0 +1,32 @@
+SiiNunit
+{
+accessory_engine_data : 1836ls.mercedes.actros.engine
+{
+	name: "@@engine_om_541_v6_bluetec5_265@@"
+	# DDE: vanilla 10800 - G1 (2008 MP3) x1.07
+	price: 11560
+	unlock: 6
+	info[]: "360 @@hp@@ (265@@kw@@)"
+	info[]: "1@@dg@@850 @@nm@@"
+	info[]: "1@@dg@@080 @@rpm@@"
+	icon: "engine/mercedes_om541"
+
+	torque: 1850
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1700, 0.8)
+	torque_curve[]: (2000, 0.6)
+	torque_curve[]: (2200, 0)
+
+	volume: 11.95
+	rpm_limit: 2000
+	rpm_range_power: (1400, 1800)
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/mercedes.actros/accessory/badge_b/badge_xx36.sii"
+}
+}

@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_engine_data : dc16_730.scania.r.engine
+{
+	name: "@@engine_dc16_21_730_euro_5_eev_v8@@"
+	# DDE: vanilla 27600 - G1 (2009 R gen 3) x1.09
+	price: 30080
+	unlock: 25
+	info[]: "730 @@hp@@ (537@@kw@@)"
+	info[]: "3@@dg@@500 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@350 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 3500
+	volume: 16.4
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.r/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.r/badge/r730.sii"
+}
+}

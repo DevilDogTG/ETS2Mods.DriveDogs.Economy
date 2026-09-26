@@ -1,0 +1,25 @@
+SiiNunit
+{
+accessory_engine_data : mx265.daf.xf.engine
+{
+	name: "@@engine_paccar_mx265@@"
+	# DDE: vanilla 8400 - G1 (2005 XF105) x1.05
+	price: 8820
+	unlock: 0
+	info[]: "360 @@hp@@ (265@@kw@@)"
+	info[]: "1@@dg@@775 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@400 @@rpm@@"
+
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 1775
+	volume: 12.9
+	rpm_limit: 2150
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/daf.xf/accessory/badge/bdg_360.sii"
+}
+}

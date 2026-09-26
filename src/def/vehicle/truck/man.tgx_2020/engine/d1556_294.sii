@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_engine_data : d1556_294.man.tgx_2020.engine
+{
+	name: "@@engine_d1556_lf07_294_euro_6d@@"
+	# DDE: vanilla 9000 - G3 (2020) x1.35
+	price: 12150
+	unlock: 4
+	info[]: "400 @@hp@@ (294@@kw@@)"
+	info[]: "1@@dg@@800 @@nm@@"
+	info[]: "1@@dg@@000 @@rpm@@"
+	icon: "engine/man_d1556"
+	part_type: factory
+
+	torque: 1800
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (600, 0.5)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1550, 1)
+	torque_curve[]: (1800, 0.89)
+	torque_curve[]: (1900, 0.79)
+	torque_curve[]: (2100, 0)
+
+	volume: 9.0
+	rpm_limit: 2000
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_2020/accessory/badge_b/hp400.sii"
+	overrides[]: "/def/vehicle/truck/man.tgx_2020/accessory/badge_c/none.sii"
+}
+}

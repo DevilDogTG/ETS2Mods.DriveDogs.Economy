@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : dc16_500.scania.streamline.engine
+{
+	name: "@@engine_dc16_19_500_euro_5_v8@@"
+	# DDE: vanilla 21132 - G2 (2013 facelift of the 2009 R platform) x1.18
+	price: 24940
+	unlock: 16
+	info[]: "500 @@hp@@ (368@@kw@@)"
+	info[]: "2@@dg@@500 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@350 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 2500
+	volume: 15.6
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.streamline/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.streamline/badge/r500.sii"
+	overrides[]: "/def/vehicle/truck/scania.streamline/accessory/cor_def/corner_deflector_02.sii"
+}
+}

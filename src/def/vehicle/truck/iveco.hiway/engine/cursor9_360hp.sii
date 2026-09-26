@@ -1,0 +1,22 @@
+SiiNunit
+{
+accessory_engine_data : cur9_360.iveco.hiway.engine
+{
+	name: "@@engine_cursor_9_360@@"
+	# DDE: vanilla 11160 - G2 (2012) x1.14
+	price: 12720
+	unlock: 8
+	info[]: "360 @@hp@@ (265@@kw@@)"
+	info[]: "1@@dg@@650 @@nm@@"
+	info[]: "1@@dg@@200-1@@dg@@550 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 1650
+	volume: 8.71
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/iveco.hiway/badge/badge_360.sii"
+}
+}

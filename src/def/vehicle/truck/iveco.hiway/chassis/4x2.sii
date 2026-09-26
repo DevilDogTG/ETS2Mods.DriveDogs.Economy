@@ -1,0 +1,42 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2.iveco.hiway.chassis
+{
+	name: "@@chassis_4x2@@"
+	# DDE: vanilla 37200 - G2 (2012) x1.14
+	price: 42410
+	unlock: 0
+	info[]: "@@chassis_4x2@@"
+	icon: "chassis_hiway_4x2"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/iveco_hiway/truck.pmd"
+	collision: "/vehicle/truck/iveco_hiway/truck.pmc"
+	variant: chs_4x2
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/iveco_hiway/shadow_4x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/iveco_hiway/ui_shadow_4x2.pmd"
+
+	tank_size: 1200
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 5060
+	kerb_weight[]: 2030
+
+	defaults[]: "/def/vehicle/truck/iveco.hiway/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/iveco.hiway/accessory/sideskirt/shape1.sii"
+	defaults[]: "/def/vehicle/truck/iveco.hiway/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/iveco.hiway/accessory/trlr_cables/stock.sii"
+
+@include "sound.sui"
+}
+}

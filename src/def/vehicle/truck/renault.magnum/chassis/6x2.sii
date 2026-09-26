@@ -1,0 +1,44 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2.renault.magnum.chassis
+{
+	name: "@@chassis_6x2@@"
+	# DDE: vanilla 32400 - G0 (1990, last facelift 2008) x0.95
+	price: 30780
+	unlock: 8
+	info[]: "@@chassis_6x2@@"
+	icon: "chassis_magnum_6x2"
+
+	detail_model: "/vehicle/truck/renault_magnum_2009/truck.pmd"
+	model: "/vehicle/truck/renault_magnum_2009/truck.pmd"
+	collision: "/vehicle/truck/renault_magnum_2009/truck.pmc"
+	variant: chassis_6x4
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/renault_magnum_2009/ext_shadow_6x2.tobj"
+	extended_shadow_intensity: 0.95
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/renault_magnum_2009/ui_shadow_6x2.pmd"
+
+	tank_size: 600
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: false
+
+	kerb_weight[]: 5100
+	kerb_weight[]: 1988
+	kerb_weight[]: 1491
+
+	defaults[]: "/def/vehicle/truck/renault.magnum/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/renault.magnum/accessory/f_intake_chs/stock.sii"
+	defaults[]: "/def/vehicle/truck/renault.magnum/accessory/trlr_cables/stock.sii"
+
+@include "sound.sui"
+}
+}

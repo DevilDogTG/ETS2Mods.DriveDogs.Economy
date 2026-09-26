@@ -1,0 +1,22 @@
+SiiNunit
+{
+accessory_engine_data : cur11_420.iveco.hiway.engine
+{
+	name: "@@engine_cursor_11_420@@"
+	# DDE: vanilla 15480 - G2 (2012) x1.14
+	price: 17650
+	unlock: 10
+	info[]: "420 @@hp@@ (309@@kw@@)"
+	info[]: "1@@dg@@900 @@nm@@"
+	info[]: "1@@dg@@050-1@@dg@@550 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 1900
+	volume: 11.118
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/iveco.hiway/badge/badge_420.sii"
+}
+}

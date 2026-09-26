@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_engine_data : d2676_353.man.tgx_euro6.engine
+{
+	name: "@@engine_d2676_lf25_353_euro_6@@"
+	# DDE: vanilla 15360 - G2 (2012, facelift 2017) x1.20
+	price: 18430
+	unlock: 12
+	info[]: "480 @@hp@@ (353@@kw@@)"
+	info[]: "2@@dg@@300 @@nm@@"
+	info[]: "930-1@@dg@@400 @@rpm@@"
+	icon: "engine/man_d2676"
+	part_type: factory
+
+	torque: 2300
+	torque_curve[]: (0, 0.0)
+	torque_curve[]: (440, 0.5)
+	torque_curve[]: (930, 1)
+	torque_curve[]: (1400, 1)
+	torque_curve[]: (1800, 0.81)
+	torque_curve[]: (1900, 0.75)
+	torque_curve[]: (2100, 0)
+
+	volume: 12.4
+	rpm_limit: 2100
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/badge_b/badge_xx480.sii"
+	overrides[]: "/def/vehicle/truck/man.tgx_euro6/accessory/badge_c/none.sii"
+}
+}

@@ -1,0 +1,25 @@
+SiiNunit
+{
+accessory_engine_data : dc13_360.scania.streamline.engine
+{
+	name: "@@engine_dc13_114_360_euro_5@@"
+	# DDE: vanilla 14160 - G2 (2013 facelift of the 2009 R platform) x1.18
+	price: 16710
+	unlock: 0
+	info[]: "360 @@hp@@ (265@@kw@@)"
+	info[]: "1@@dg@@850 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@300 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 1850
+	volume: 12.74
+	no_adblue_power_limit: 0.5
+
+@include "sound_lo.sui"
+
+	overrides[]: "/def/vehicle/truck/scania.streamline/accessory/c_badge/euro_none.sii"
+	overrides[]: "/def/vehicle/truck/scania.streamline/badge/r360.sii"
+	overrides[]: "/def/vehicle/truck/scania.streamline/accessory/cor_def/corner_deflector_01.sii"
+}
+}

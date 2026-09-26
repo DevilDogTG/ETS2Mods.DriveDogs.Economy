@@ -1,0 +1,46 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2t.renault.t.chassis
+{
+	name: "@@chassis_4x2_extra_tank@@"
+	# DDE: vanilla 29400 - G2 (2013) x1.15
+	price: 33810
+	unlock: 4
+	info[]: "@@chassis_4x2@@"
+	icon: "chassis_renault_t_4x2t"
+	part_type: factory
+
+	model: "/vehicle/truck/renault_t/chassis/chs_4x2t.pmd"
+	collision: "/vehicle/truck/renault_t/chassis/chs_4x2t.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/renault_t/shadow_4x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	extended_shadow_shared_model_variant: chs_4x2
+	ui_shadow: "/vehicle/truck/renault_t/ui_shadow_4x2.pmd"
+
+	tank_size: 1475
+	adblue_tank_size: 80
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	kerb_weight[]: 5487
+	kerb_weight[]: 2125
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/air_tank/4x2_basic.sii"
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/r_fender/4x2_plastic.sii"
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/r_mudflap/4x2_stock.sii"
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/sideskirt/4x2_short_plastic.sii"
+
+	lamp_setup: "/def/vehicle/truck/renault.t/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

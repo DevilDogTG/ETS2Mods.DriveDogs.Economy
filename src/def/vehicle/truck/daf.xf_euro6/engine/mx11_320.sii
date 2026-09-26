@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_engine_data : mx11_320.daf.xf_euro6.engine
+{
+	name: "@@engine_mx_11_320_euro_6@@"
+	# DDE: vanilla 13320 - G2 (2013 XF106) x1.20
+	price: 15980
+	unlock: 6
+	info[]: "435 @@hp@@ (320@@kw@@)"
+	info[]: "2@@dg@@100 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@450 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 2100
+	rpm_limit: 2200
+	volume: 10.8
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/daf.xf_euro6/badge/badge_440.sii"
+}
+}

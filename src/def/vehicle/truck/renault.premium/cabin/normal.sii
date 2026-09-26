@@ -1,0 +1,36 @@
+SiiNunit
+{
+accessory_cabin_data : normal.renault.premium.cabin
+{
+	name: "@@cabin_normal_roof@@"
+	# DDE: vanilla 21960 - G0 (1996, facelift 2006) x0.95
+	price: 20860
+	unlock: 0
+	icon: "cab_premium_b"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/renault_premium/truck.pmd"
+	collision: "/vehicle/truck/renault_premium/truck.pmc"
+	variant: cabin_b
+	variant_uk: cabin_b_uk
+	look: default
+
+	wiper_model: "/vehicle/truck/renault_premium/wipers.pmd"
+	wiper_anim: "/vehicle/truck/renault_premium/wipers.pma"
+	wiper_model_uk: "/vehicle/truck/renault_premium/wipers_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/renault_premium/wipers_uk.pma"
+
+	windows_model: "/vehicle/truck/renault_premium/win_open.pmd"
+	left_window_anim: "/vehicle/truck/renault_premium/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/renault_premium/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/renault.premium/accessory/doorhndl/shape1.sii"
+	defaults[]: "/def/vehicle/truck/renault.premium/accessory/mirror/shape1.sii"
+	defaults[]: "/def/vehicle/truck/renault.premium/accessory/cab_doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/renault.premium/head_light/standard.sii"
+	defaults[]: "/def/vehicle/truck/renault.premium/paint_job/color1.sii"
+	defaults[]: "/def/vehicle/truck/renault.premium/interior/standard.sii"
+
+@include "sound.sui"
+}
+}

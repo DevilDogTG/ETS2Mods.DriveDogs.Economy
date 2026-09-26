@@ -1,0 +1,57 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2_4.scania.r_2016.chassis
+{
+	name: "@@chassis_6x2_4@@"
+	# DDE: vanilla 41160 - G3 (2016 NTG) x1.39
+	price: 57210
+	unlock: 10
+	part_type: factory
+
+	info[]: "@@chassis_6x2_4@@"
+	#info[]: "400 + 200 @@unit_l@@"
+	icon: "truck/scania_2016/accessory/chassis/chassis_scania_2016_6x2_4"
+
+	model: "/vehicle/truck/scania_2016/chassis/chs_6x2_4.pmd"
+	collision: "/vehicle/truck/scania_2016/chassis/chs_6x2_4.pmc"
+
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/scania_2016/shadow_6x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	extended_shadow_shared_model_variant: chs_6x2_24
+	ui_shadow: "/vehicle/truck/scania_2016/ui_shadow_6x2.pmd"
+
+	adblue_tank_size: 47
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.080
+	residual_travel[]: 0.080
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	steerable_axle[]: true
+	steerable_axle[]: true
+	steerable_axle[]: false
+
+	kerb_weight[]: 5350
+	kerb_weight[]: 1468
+	kerb_weight[]: 2202
+
+	defaults[]: "/def/vehicle/truck/scania.r_2016/accessory/r_fender/6x2_blk.sii"
+	defaults[]: "/def/vehicle/truck/scania.r_2016/accessory/r_chs_cover/stock_6x2.sii"
+	defaults[]: "/def/vehicle/truck/scania.r_2016/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/scania.r_2016/accessory/tank/6x2_510.sii"
+
+	defaults[]: "/def/vehicle/truck/scania.r_2016/cabin/normal.sii"
+
+	lamp_setup: "/def/vehicle/truck/scania.r_2016/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

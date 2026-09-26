@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2.man.tgx.chassis
+{
+	name: "@@chassis_4x2@@"
+	# DDE: vanilla 25560 - G1 (2007) x1.05
+	price: 26840
+	unlock: 0
+	info[]: "@@chassis_4x2@@"
+	icon: "chassis_man_tgx_4x2"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/man_tgx/chassis/chs_4x2.pmd"
+	collision: "/vehicle/truck/man_tgx/chassis/chs_4x2.pmc"
+	variant: Default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/man_tgx/shadow_4x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/man_tgx/ui_shadow_4x2.pmd"
+
+	tank_size: 1250
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 5005
+	kerb_weight[]: 1950
+
+	defaults[]: "/def/vehicle/truck/man.tgx/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/paint_job/color2.sii"
+
+	overrides[]: "/def/vehicle/truck/man.tgx/chs_badges/chs_badges_18.sii"
+
+@include "sound.sui"
+}
+}

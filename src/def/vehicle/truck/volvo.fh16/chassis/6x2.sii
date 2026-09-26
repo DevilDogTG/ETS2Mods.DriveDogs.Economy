@@ -1,0 +1,50 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2.volvo.fh16.chassis
+{
+	name: "@@chassis_6x2@@"
+	# DDE: vanilla 32400 - G1 (2009 FH gen 3) x1.09
+	price: 35320
+	unlock: 8
+	info[]: "@@chassis_6x2@@"
+	icon: "chassis_volvo_fh16_6x4"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/volvo_fh16_2009/chassis/chs_6x2.pmd"
+	collision: "/vehicle/truck/volvo_fh16_2009/chassis/chs_6x2.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/volvo_fh16_2009/shadow_6x4.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/volvo_fh16_2009/ui_shadow_6x4.pmd"
+
+	tank_size: 800
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: false
+
+	kerb_weight[]: 5225
+	kerb_weight[]: 1908
+	kerb_weight[]: 1431
+
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/paint_job/color2.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/f_bumper/stock.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/f_inlay_chs/stock.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/r_fender/stock_6x.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/r_bumper/stock.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/r_chs_cover/stock_6x.sii"
+	defaults[]: "/def/vehicle/truck/volvo.fh16/accessory/r_mudflap/stock.sii"
+
+@include "sound.sui"
+}
+}

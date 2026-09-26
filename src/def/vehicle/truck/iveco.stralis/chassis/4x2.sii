@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2.iveco.stralis.chassis
+{
+	name: "@@chassis_4x2@@"
+	# DDE: vanilla 23160 - G1 (2002, AS 2007) x0.99
+	price: 22930
+	unlock: 0
+	info[]: "@@chassis_4x2@@"
+	icon: "chassis_stralis_4x2"
+	part_type: factory
+
+	detail_model: "/vehicle/truck/iveco_stralis/truck.pmd"
+	collision: "/vehicle/truck/iveco_stralis/truck.pmc"
+	variant: chs_4x2
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/iveco_stralis/shadow_4x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+
+	ui_shadow: "/vehicle/truck/iveco_stralis/ui_shadow_4x2.pmd"
+
+	tank_size: 1300
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 4765
+	kerb_weight[]: 2010
+
+	defaults[]: "/def/vehicle/truck/iveco.stralis/paint_job/color6.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/accessory/exhaust_l/shape14_4x2.sii"
+	defaults[]: "/def/vehicle/truck/iveco.stralis/accessory/trlr_cables/stock.sii"
+
+@include "sound.sui"
+}
+}

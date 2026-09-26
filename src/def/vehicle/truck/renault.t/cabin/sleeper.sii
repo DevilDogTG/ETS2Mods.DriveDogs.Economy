@@ -1,0 +1,36 @@
+SiiNunit
+{
+accessory_cabin_data : sleeper.renault.t.cabin
+{
+	name: "@@cabin_sleeper@@"
+	# DDE: vanilla 21960 - G2 (2013) x1.15
+	price: 25250
+	unlock: 0
+	icon: "cab_b_renault_t"
+	part_type: factory
+
+	model: "/vehicle/truck/renault_t/cabin/cabin_b.pmd"
+	collision: "/vehicle/truck/renault_t/cabin/cabin_b.pmc"
+	variant: default
+	variant_uk: uk
+	look: default
+
+	wiper_model: "/vehicle/truck/renault_t/wipers_low.pmd"
+	wiper_anim: "/vehicle/truck/renault_t/wipers_low.pma"
+	wiper_model_uk: "/vehicle/truck/renault_t/wipers_low_uk.pmd"
+	wiper_anim_uk: "/vehicle/truck/renault_t/wipers_low_uk.pma"
+
+	windows_model: "/vehicle/truck/renault_t/win_open_low.pmd"
+	left_window_anim: "/vehicle/truck/renault_t/win_open_low_l.pma"
+	right_window_anim: "/vehicle/truck/renault_t/win_open_low_r.pma"
+
+	drl_with_headlights: 0.5
+
+	defaults[]: "/def/vehicle/truck/renault.t/interior/standard_21_low.sii"
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/f_fender_cab/plastic_low_evo.sii"
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/s_panel/lowcab.sii"
+	defaults[]: "/def/vehicle/truck/renault.t/accessory/s_reflector/s_refl_b_01.sii"
+
+@include "sound.sui"
+}
+}

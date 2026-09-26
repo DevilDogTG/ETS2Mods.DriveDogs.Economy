@@ -1,0 +1,24 @@
+SiiNunit
+{
+accessory_engine_data : d16g600.volvo.fh16_2012.engine
+{
+	name: "@@engine_d16g600_euro_5_eev@@"
+	# DDE: vanilla 23340 - G2 (2012 FH gen 4) x1.24
+	price: 28940
+	unlock: 18
+	info[]: "600 @@hp@@ (441@@kw@@)"
+	info[]: "2@@dg@@800 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@500 @@rpm@@"
+	icon: "engine_volvo_d16"
+	part_type: factory
+
+	torque: 2800
+	rpm_limit: 2100
+	volume: 16.1
+	no_adblue_power_limit: 0.5
+
+@include "sound_hi.sui"
+
+	overrides[]: "/def/vehicle/truck/volvo.fh16_2012/accessory/badge/badge_600.sii"
+}
+}

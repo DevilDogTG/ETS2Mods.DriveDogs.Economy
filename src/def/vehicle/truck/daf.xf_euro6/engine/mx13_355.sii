@@ -1,0 +1,25 @@
+SiiNunit
+{
+accessory_engine_data : mx13_355.daf.xf_euro6.engine
+{
+	name: "@@engine_mx_13_355_euro_6_2017@@"
+	# DDE: vanilla 19800 - G2 (2013 XF106) x1.20
+	price: 23760
+	unlock: 14
+	info[]: "480 @@hp@@ (355@@kw@@)"
+	info[]: "2@@dg@@350/2@@dg@@500 @@nm@@"
+	info[]: "900-1@@dg@@365 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 2350
+	secondary_torque: 2500
+	rpm_limit: 2200
+	volume: 12.9
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/daf.xf_euro6/badge/badge_480.sii"
+}
+}

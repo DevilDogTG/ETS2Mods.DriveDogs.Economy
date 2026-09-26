@@ -1,0 +1,48 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2s_xf.daf.2021.chassis
+{
+	name: "@@chassis_ft@@"
+	# DDE: vanilla 22200 - G3 (2021 XF/XG/XG+) x1.35
+	price: 29970
+	unlock: 0
+	info[]: "@@chassis_4x2@@"
+	icon: "truck/daf_2021/chassis/chs_4x2_short"
+	part_type: factory
+
+	model: "/vehicle/truck/daf_2021/chassis/chs_xf_4x2_short.pmd"
+	collision: "/vehicle/truck/daf_2021/chassis/chs_xf_4x2_short.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/daf_2021/shadow_4x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/daf_2021/ui_shadow/ui_4x2_short.pmd"
+
+	tank_size: 1465
+	adblue_tank_size: 90
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 5038
+	kerb_weight[]: 2014
+
+	suitable_for[]: xf.daf.2021.cabin
+
+	defaults[]: "/def/vehicle/truck/daf.2021/accessory/r_fender/plastic.sii"
+	defaults[]: "/def/vehicle/truck/daf.2021/accessory/r_mudflap/stock.sii"
+	defaults[]: "/def/vehicle/truck/daf.2021/accessory/sideskirt/empty_4x2s_xf.sii"
+	defaults[]: "/def/vehicle/truck/daf.2021/accessory/tank/4x2s_430.sii"
+	defaults[]: "/def/vehicle/truck/daf.2021/accessory/trlr_cables/stock_xf.sii"
+
+	lamp_setup: "/def/vehicle/truck/daf.2021/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

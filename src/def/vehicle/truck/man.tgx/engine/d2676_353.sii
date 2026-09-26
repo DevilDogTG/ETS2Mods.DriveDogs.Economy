@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_engine_data : d2676_353.man.tgx.engine
+{
+	name: "@@engine_d2676_353@@"
+	# DDE: vanilla 15960 - G1 (2007) x1.05
+	price: 16760
+	unlock: 12
+	info[]: "480 @@hp@@ (353@@kw@@)"
+	info[]: "2@@dg@@300 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@400 @@rpm@@"
+	icon: "engine_01"
+	part_type: factory
+
+	torque: 2300
+	volume: 12.4
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/man.tgx/badge/18480.sii"
+}
+}

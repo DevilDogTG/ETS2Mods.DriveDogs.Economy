@@ -1,0 +1,23 @@
+SiiNunit
+{
+accessory_engine_data : mx13_303.daf.xf_euro6.engine
+{
+	name: "@@engine_mx_13_303_euro_6@@"
+	# DDE: vanilla 12600 - G2 (2013 XF106) x1.20
+	price: 15120
+	unlock: 2
+	info[]: "410 @@hp@@ (303@@kw@@)"
+	info[]: "2@@dg@@000 @@nm@@"
+	info[]: "1@@dg@@000-1@@dg@@425 @@rpm@@"
+	icon: "engine_01"
+
+	torque: 2000
+	rpm_limit: 2200
+	volume: 12.9
+	no_adblue_power_limit: 0.5
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/daf.xf_euro6/badge/badge_410.sii"
+}
+}

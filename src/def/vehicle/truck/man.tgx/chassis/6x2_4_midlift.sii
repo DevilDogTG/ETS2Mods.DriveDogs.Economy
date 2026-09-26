@@ -1,0 +1,53 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2_4_ml.man.tgx.chassis
+{
+	name: "@@chassis_6x2_4_midlift@@"
+	# DDE: vanilla 52320 - G1 (2007) x1.05
+	price: 54940
+	unlock: 12
+	info[]: "@@chassis_6x2_4_midlift@@"
+	icon: "chassis_man_tgx_6x2"
+
+	detail_model: "/vehicle/truck/man_tgx/chassis/chs_6x2_4.pmd"
+	collision: "/vehicle/truck/man_tgx/chassis/chs_6x2_4.pmc"
+	variant: Default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/man_tgx/shadow_6x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/man_tgx/ui_shadow_6x2.pmd"
+
+	tank_size: 450
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	steerable_axle[]: true
+	steerable_axle[]: true
+	steerable_axle[]: false
+
+	kerb_weight[]: 5095
+	kerb_weight[]: 1226
+	kerb_weight[]: 1839
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+
+	defaults[]: "/def/vehicle/truck/man.tgx/accessory/doorstep/shape1.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/accessory/trlr_cables/stock.sii"
+	defaults[]: "/def/vehicle/truck/man.tgx/paint_job/color2.sii"
+
+	overrides[]: "/def/vehicle/truck/man.tgx/chs_badges/chs_badges_26.sii"
+
+@include "sound.sui"
+}
+}
