@@ -219,12 +219,39 @@ Note: used-truck listings already on the market when you install or update this 
 old price until they expire (see the Used Truck Market note above). New-truck dealer prices
 update immediately.
 --------------------
+[orange]Legacy Trucks at Dealers
+[normal]The base game stopped selling its older trucks new - you could keep one you already owned,
+but no dealer would sell you one. They're back in the showroom, as the value end of the New Truck
+Prices curve above.
+
+What changes:
+- DAF XF105, Iveco Stralis and Hi-Way, MAN TGX Euro 5, Mercedes Actros MP3, Renault Magnum and
+  Premium, Scania R 2009 and Streamline, and Volvo FH16 (2009 and 2012) can be bought new again,
+  at both mainland and UK (right-hand drive) dealers.
+- Each comes in 3-4 ready-made configurations - an entry truck, a mid-range one, a flagship, and a
+  multi-axle where the model offers one - and can be customised in the configurator as usual.
+- Prices are the New Truck Prices ones: the oldest models at roughly base-game price, cheaper than
+  their current replacements.
+- The used market is expected to offer these models too.
+
+What does NOT change:
+- Every current truck's dealer offers - untouched.
+- How the older trucks drive, and their part and accessory prices.
+
+Compatibility: don't run "Restore Old Trucks" (Workshop) alongside this pack. It ships outdated
+copies of the current Scania R/S 2016 and Renault T dealer trucks that would override the
+base game's.
+--------------------
 [orange]More sections coming
 [normal]Damage & Wear, Fines & Police, the Used Truck Market, Operating Consequences, Job Types &
-Skills, Cargo Variety, and New Truck Prices are the systems in this pack so far. More economy systems will be
+Skills, Cargo Variety, New Truck Prices, and Legacy Trucks at Dealers are the systems in this pack so far. More economy systems will be
 documented here as they're added.
 --------------------
 [green]Changelogs
+
+[orange]v1.3.0
+[normal]- Legacy Trucks at Dealers: the 11 older truck models the base game stopped selling are back
+  at EU and UK dealers, priced by New Truck Prices.
 
 [orange]v1.2.2
 [normal]- Owned trailers now wear their body and chassis with distance (~1% per 1000 km), giving the
