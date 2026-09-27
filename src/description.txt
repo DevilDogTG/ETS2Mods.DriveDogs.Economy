@@ -249,6 +249,10 @@ documented here as they're added.
 --------------------
 [green]Changelogs
 
+[orange]v1.3.1
+[normal]- Mod Manager category fixed: the pack now shows under Other instead of Physics. It never
+  changed physics; ETS2 has no economy category, so the old "economy" tag was ignored.
+
 [orange]v1.3.0
 [normal]- Legacy Trucks at Dealers: the 11 older truck models the base game stopped selling are back
   at EU and UK dealers, priced by New Truck Prices.
