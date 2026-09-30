@@ -29,8 +29,9 @@ economy_data : economy.data.storage
 
 	# DDE: vanilla 62.0 - lowered so deadlines assume a realistic average pace (including
 	# loading, traffic, rest stops) instead of near-highway-cruising speed, removing the
-	# incentive to speed just to make the clock
-	simulation_avg_speed: 45.0	# km/h
+	# incentive to speed just to make the clock. v1.0-v1.3.1 used 45.0, which playtested with
+	# more slack than needed; 52 keeps ~3-5 h spare on long jobs at a steady pace
+	simulation_avg_speed: 52.0	# km/h
 
 	default_time_zone: 120		# +2 hours
 	default_time_zone_name: "CEST"
@@ -38,12 +39,12 @@ economy_data : economy.data.storage
 	maximum_driving_time: 660	# how long the driver can drive (in minutes)
 	sleeping_time: 540		# length of sleep (in minutes)
 
-	# DDE: scaled by 62/45 (~1.378x) to match the slower simulation_avg_speed above, so the
+	# DDE: scaled by 62/52 (~1.192x) to match the slower simulation_avg_speed above, so the
 	# easy/medium/hard tier mix (and their revenue bonuses below) stays roughly where vanilla
 	# had it instead of quietly drifting toward "easier" as trip times grow
-	delivery_window[0]: 550		# easy - vanilla 400
-	delivery_window[1]: 345		# medium - vanilla 250
-	delivery_window[2]: 124		# hard - vanilla 90
+	delivery_window[0]: 477		# easy - vanilla 400
+	delivery_window[1]: 298		# medium - vanilla 250
+	delivery_window[2]: 107		# hard - vanilla 90
 
 	delivery_window_coef[0]: 1.0	# easy
 	delivery_window_coef[1]: 1.15	# medium  revenue coef
