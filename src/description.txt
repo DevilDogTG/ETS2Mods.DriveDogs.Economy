@@ -249,6 +249,11 @@ documented here as they're added.
 --------------------
 [green]Changelogs
 
+[orange]v1.3.2
+[normal]- Delivery deadlines tightened: they now assume a 52 km/h average pace (was 45), so long
+  jobs keep about 3-5 hours spare at a steady pace instead of 6-10. The easy/medium/hard job mix is
+  recalibrated to match. Still looser than vanilla's 62 km/h.
+
 [orange]v1.3.1
 [normal]- Mod Manager category fixed: the pack now shows under Other instead of Physics. It never
   changed physics; ETS2 has no economy category, so the old "economy" tag was ignored.
