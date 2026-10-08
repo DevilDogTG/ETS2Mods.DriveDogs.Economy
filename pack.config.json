@@ -1,1 +1,1 @@
-{ "packageName": "drivedog_economy", "prePack": ["python tools/generate_cover.py"] }
+{ "packageName": "drivedog_economy", "game": "ets2", "prePack": ["python tools/generate_cover.py"] }
